@@ -4,7 +4,6 @@ import { Inter, Playfair_Display } from 'next/font/google'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import Lines from '@/components/Lines'
 import ScrollToTop from '@/components/ScrollToTop'
 
 import './globals.css'
@@ -27,7 +26,6 @@ export default function RootLayout({ children }) {
             <body
                 className={`relative ${fontHeading.variable} ${fontBody.variable}`}
             >
-                <Lines />
                 <Header />
                 {children}
                 <Footer />

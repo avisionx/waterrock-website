@@ -22,6 +22,6 @@
     }
 
     body {
-        @apply relative text-base font-normal text-black;
+        @apply relative bg-background text-base font-normal text-black;
     }
 }

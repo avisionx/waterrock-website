@@ -17,11 +17,20 @@ module.exports = {
       colors: {
         current: "currentColor",
         transparent: "transparent",
-        white: "#f4f1ee",
+        white: "#fffffa",
         black: "#1a1a1a",
-        primary: '#3a5a40',
-        secondary: '#a98467',
-        accent: '#e9e5df',
+        'text': '#1a1a1a',
+        'background': '#f4f1ee',
+        'primary': '#3a5a40',
+        'secondary': '#a98467',
+        'accent': '#e9e5df',
+      },
+      maxWidth: {
+        '8xl': '90rem',
+        '9xl': '100rem',
+        '10xl': '110rem',
+        '11xl': '120rem',
+        '12xl': '130rem',
       },
       keyframes: {
         line: {
