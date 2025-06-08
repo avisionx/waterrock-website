@@ -74,10 +74,8 @@ export const MENU_DATA = [
     {
         title: 'Experiences',
         submenu: [
-            { title: 'Activities', href: '/activities' },
-            { title: 'Gallery', href: '/gallery' },
-            { title: 'Amenities', href: '/amenities' },
-            { title: 'Attractions', href: '/attractions' },
+            { title: 'Activities', href: '/#activities' },
+            { title: 'Amenities', href: '/#amenities' },
         ],
     },
     {
@@ -95,9 +93,9 @@ export const MENU_DATA = [
 ]
 
 export const ACTIVITIES = [
-    { name: 'Kayaking (Seasonal)', icon: WavesIcon },
-    { name: 'Night Boating (Seasonal)', icon: MoonIcon },
-    { name: 'Sunrise Boating (Seasonal)', icon: SunIcon },
+    { name: 'Kayaking (Seasonal)', icon: WavesIcon, asterik: true },
+    { name: 'Night Boating (Seasonal)', icon: MoonIcon, asterik: true },
+    { name: 'Sunrise Boating (Seasonal)', icon: SunIcon, asterik: true },
     { name: 'Jetty Jump', icon: ZapIcon },
     { name: 'Floating & Swimming in Lake', icon: LifeBuoyIcon },
     { name: 'TurnBall', icon: Gamepad2Icon },
@@ -249,7 +247,9 @@ export const FOOTER_LINKS = [
         links: [
             { href: '/about', label: 'About' },
             { href: '/contact', label: 'Contact' },
-            { href: '/faq', label: 'FAQ' },
+            { href: '/careers', label: 'Careers' },
+            { href: '/faqs', label: 'FAQs' },
+            { href: '/sitemap.xml', label: 'Sitemap' },
         ],
     },
     {
@@ -259,7 +259,7 @@ export const FOOTER_LINKS = [
             { href: 'tel:support@example.com', label: '+91 87248294024' },
             {
                 href: 'https://maps.google.com/?q=Your+Company+Address',
-                label: 'Reach Us ↗',
+                label: 'Reach WaterRock Bhor ↗',
             },
         ],
     },

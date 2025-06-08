@@ -22,16 +22,29 @@ export default function Footer() {
                                 {section.title}
                             </p>
                             <ul className="space-y-2">
-                                {section.links.map((link) => (
-                                    <li key={link.label}>
-                                        <Link
-                                            href={link.href}
-                                            className="text-sm text-black/80 hover:underline"
-                                        >
-                                            {link.label}
-                                        </Link>
-                                    </li>
-                                ))}
+                                {section.links.map((link) => {
+                                    const isExternal = link.label.includes('↗')
+                                    return (
+                                        <li key={link.label}>
+                                            <Link
+                                                href={link.href}
+                                                className="text-sm text-black/80 hover:underline"
+                                                target={
+                                                    isExternal
+                                                        ? '_blank'
+                                                        : undefined
+                                                }
+                                                rel={
+                                                    isExternal
+                                                        ? 'noopener noreferrer'
+                                                        : undefined
+                                                }
+                                            >
+                                                {link.label}
+                                            </Link>
+                                        </li>
+                                    )
+                                })}
                             </ul>
                         </div>
                     ))}
@@ -39,18 +52,20 @@ export default function Footer() {
                 <div className="mt-8 border-t border-black/5 pt-8 text-sm text-black/80">
                     <p>
                         Made with ❤ by{' '}
-                        <a href="https://avisionx.net/" className="underline">
+                        <Link
+                            href="https://avisionx.net/"
+                            className="underline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             @avisionx
-                        </a>
+                        </Link>
                     </p>
                     <p className="mt-1">
                         Copyright © {new Date().getFullYear()}{' '}
-                        <a
-                            href="https://www.waterrock.in/"
-                            className="underline"
-                        >
+                        <Link href="/" className="underline">
                             WaterRock
-                        </a>
+                        </Link>
                         . All Rights Reserved.{' '}
                     </p>
                 </div>

@@ -19,16 +19,18 @@ export default function FAQs() {
                     >
                         <button
                             onClick={() => setActiveIdx(isOpen ? null : idx)}
-                            className="flex w-full cursor-pointer items-center justify-between px-6 py-4 hover:bg-secondary/5"
+                            className="flex w-full cursor-pointer items-center justify-between gap-4 px-6 py-4 hover:bg-secondary/5"
                         >
-                            <span className="font-medium text-black/80 md:text-lg">
+                            <span className="text-left font-medium text-black/80 md:text-lg">
                                 {faq.question}
                             </span>
-                            {isOpen ? (
-                                <MinusIcon className="text-black/20" />
-                            ) : (
-                                <PlusIcon className="text-black/20" />
-                            )}
+                            <div>
+                                {isOpen ? (
+                                    <MinusIcon className="text-black/20" />
+                                ) : (
+                                    <PlusIcon className="text-black/20" />
+                                )}
+                            </div>
                         </button>
                         {isOpen && (
                             <div className="px-6 pb-4 pt-1 text-black/70 transition-all">

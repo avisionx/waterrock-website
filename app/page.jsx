@@ -32,7 +32,7 @@ export default function HomePage() {
                         <h1 className="font-heading text-4xl leading-tight sm:text-5xl md:text-6xl">
                             Escape, <br />
                             <span className="text-primary">Explore</span> &amp;
-                            <span className="font-heading italic text-secondary">
+                            <span className="text-outline font-heading italic">
                                 Experience
                             </span>
                             <br />
@@ -44,7 +44,7 @@ export default function HomePage() {
                         </p>
                         <div className="flex gap-4 pt-2">
                             <Link
-                                href="/"
+                                href="/#our-stays"
                                 className="inline-flex h-[44px] items-center justify-center rounded-full bg-secondary px-6 py-1 font-medium text-white transition-all hover:bg-secondary/90"
                             >
                                 Explore Stays
@@ -121,9 +121,9 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
-            <section className="pb-24">
+            <section className="pb-24" id="our-stays">
                 <div className="mx-auto max-w-9xl px-4">
-                    <FancyHeading text="Our Locations" />
+                    <FancyHeading text="Our Stays" />
                     <p className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg">
                         From hilltops to lakesides, discover thoughtfully
                         crafted stays across India — each echoing
@@ -195,23 +195,39 @@ export default function HomePage() {
             <section className="pb-24">
                 <div className="mx-auto max-w-9xl px-4">
                     <FancyHeading text="Activities & Amenities" />
-                    <p className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg">
+                    <p
+                        className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg"
+                        id="activities"
+                    >
                         Dive into a world of adventure and leisure with
                         handpicked activities that spark joy, energy, and
                         connection for all.
                     </p>
                     <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-                        {ACTIVITIES.map(({ name, icon: Icon }) => (
+                        {ACTIVITIES.map(({ name, icon: Icon, asterik }) => (
                             <div
                                 key={name}
                                 className="flex items-center gap-3 text-sm font-medium text-black/80"
                             >
-                                <Icon className="text-primary" /> {name}
+                                <Icon className="text-primary" />{' '}
+                                <p>
+                                    {name}
+                                    {asterik && (
+                                        <span className="text-red-500">*</span>
+                                    )}
+                                </p>
                             </div>
                         ))}
                     </div>
-                    <hr className="mx-auto my-6 max-w-32" />
-                    <p className="mx-auto mt-12 max-w-3xl text-center text-black/70 md:text-lg">
+                    <p className="mt-5 text-sm font-medium text-black/70">
+                        <span className="text-red-500">*</span> Water activities
+                        in Dam are seasonal. Please ask for the same.{' '}
+                    </p>
+                    <hr className="mx-auto mt-10 max-w-32" />
+                    <p
+                        className="mx-auto mt-10 max-w-3xl text-center text-black/70 md:text-lg"
+                        id="amenities"
+                    >
                         Experience comfort redefined with premium amenities
                         designed to elevate your stay—luxurious, thoughtful, and
                         crafted for ultimate relaxation.
@@ -306,12 +322,20 @@ export default function HomePage() {
                 <div className="mx-auto max-w-9xl px-4">
                     <div className="grid gap-6 md:grid-cols-3 md:gap-32">
                         <div>
-                            <p className="font-heading text-4xl">FAQs</p>
+                            <p className="bg-gradient-to-br from-primary to-black/80 bg-clip-text font-heading text-4xl text-transparent">
+                                FAQs
+                            </p>
                             <p className="mt-2 text-black/70 md:text-lg">
                                 Answers to some questions you might have.
                             </p>
+                            <Link
+                                href="/faqs"
+                                className="mt-4 inline-flex h-[44px] items-center justify-center gap-2 rounded-full bg-accent px-6 py-1 font-medium text-black transition-all hover:bg-accent/50 hover:text-black/70"
+                            >
+                                View All <ArrowRightIcon className="size-4" />
+                            </Link>
                         </div>
-                        <div className="col-span-2 space-y-4">
+                        <div className="space-y-4 md:col-span-2">
                             <FAQs />
                         </div>
                     </div>
@@ -320,7 +344,7 @@ export default function HomePage() {
             <section className="pb-24">
                 <div className="mx-auto max-w-9xl px-4 py-4 text-center">
                     <p className="font-heading text-5xl text-black">
-                        Your <span className="text-[#7e8d7a]">Journey</span>{' '}
+                        Your <span className="text-primary">Journey</span>{' '}
                         Shouldn&apos;t End Here.
                     </p>
                     <p className="mt-4 text-black/80 md:text-lg">
@@ -328,7 +352,7 @@ export default function HomePage() {
                     </p>
                     <div className="mt-8 flex justify-center gap-4 pt-2">
                         <Link
-                            href="/"
+                            href="/#our-stays"
                             className="inline-flex h-[44px] items-center justify-center rounded-full bg-secondary px-6 py-1 font-medium text-white transition-all hover:bg-secondary/90"
                         >
                             Explore Stays
