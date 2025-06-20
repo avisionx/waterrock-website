@@ -197,13 +197,10 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
-            <section className="pb-24">
+            <section className="pb-24" id="activities">
                 <div className="mx-auto max-w-9xl px-4">
                     <FancyHeading text="Activities & Amenities" />
-                    <p
-                        className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg"
-                        id="activities"
-                    >
+                    <p className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg">
                         Dive into a world of adventure and leisure with
                         handpicked activities that spark joy, energy, and
                         connection for all.
@@ -224,15 +221,15 @@ export default function HomePage() {
                             </div>
                         ))}
                     </div>
-                    <p className="mt-5 text-sm font-medium text-black/70">
+                    <p
+                        className="mt-5 text-sm font-medium text-black/70"
+                        id="amenities"
+                    >
                         <span className="text-red-500">*</span> Water activities
                         in Dam are seasonal. Please ask for the same.{' '}
                     </p>
                     <hr className="mx-auto mt-10 max-w-32" />
-                    <p
-                        className="mx-auto mt-10 max-w-3xl text-center text-black/70 md:text-lg"
-                        id="amenities"
-                    >
+                    <p className="mx-auto mt-10 max-w-3xl text-center text-black/70 md:text-lg">
                         Experience comfort redefined with premium amenities
                         designed to elevate your stay—luxurious, thoughtful, and
                         crafted for ultimate relaxation.

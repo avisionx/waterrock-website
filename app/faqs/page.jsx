@@ -3,6 +3,10 @@ import 'server-only'
 import AllFAQs from '@/components/AllFAQs'
 import PageTitle from '@/components/PageTitle'
 
+export const metadata = {
+    title: 'FAQs',
+}
+
 export default function FaqsPage() {
     return (
         <>

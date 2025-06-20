@@ -44,18 +44,26 @@ export const STAY_OPTIONS = [
             {
                 id: 'mango-tree-chalet',
                 name: 'The Mango Tree Chalet – 1 BH Luxury Villa',
+                description:
+                    'A private luxury villa nestled under a mango tree, perfect for couples or small families seeking comfort and nature.',
             },
             {
                 id: 'a-frame-cabins',
                 name: 'A Frame Cabins',
+                description:
+                    'Stylish A-frame wooden cabins offering a cozy, unique stay experience with beautiful lake views.',
             },
             {
                 id: 'soulspree-bungalow',
                 name: 'SoulSpree – 2 BH Bungalow',
+                description:
+                    'Spacious 2-bedroom bungalow ideal for families or groups, with modern amenities and serene surroundings.',
             },
             {
                 id: 'tents-glamping',
                 name: 'Tents and Glamping',
+                description:
+                    'Premium tents for a glamping experience, combining adventure with comfort and scenic beauty.',
             },
         ],
     },
@@ -65,6 +73,15 @@ export const STAY_OPTIONS = [
         options: [],
     },
 ]
+
+export const STAY_DETAILS = STAY_OPTIONS.reduce((acc, locationGroup) => {
+    const { location, options, ...locationRest } = locationGroup
+    acc[location] = options.reduce((optionAcc, option) => {
+        optionAcc[option.id] = { ...option, location: { ...locationRest } }
+        return optionAcc
+    }, {})
+    return acc
+}, {})
 
 export const MENU_DATA = [
     {

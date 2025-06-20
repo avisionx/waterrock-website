@@ -7,6 +7,10 @@ import CTA from '@/components/CTA'
 import FancyHeading from '@/components/FancyHeading'
 import PageTitle from '@/components/PageTitle'
 
+export const metadata = {
+    title: 'Contact Us',
+}
+
 export default function ContactPage() {
     return (
         <>

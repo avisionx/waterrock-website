@@ -9,6 +9,10 @@ import PageTitle from '@/components/PageTitle'
 
 import { STAY_OPTIONS } from '@/app/constants'
 
+export const metadata = {
+    title: 'About Us',
+}
+
 export default function AboutPage() {
     return (
         <>
