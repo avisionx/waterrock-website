@@ -82,7 +82,7 @@ export const MENU_DATA = [
         title: 'Company',
         submenu: [
             { title: 'About', href: '/about' },
-            { title: 'Careers', href: '/careers' },
+            { title: 'Careers', href: '/about#careers' },
             { title: 'FAQs', href: '/faqs' },
         ],
     },
@@ -241,6 +241,105 @@ export const FAQS = [
     },
 ]
 
+export const ALL_FAQS = [
+    {
+        question: 'How far is the place from Pune/Mumbai?',
+        answer: 'The site is about 70+ Kms or 2–2.5 hrs from Pune and 200+ Kms or 4–5 hours drive from Ghatkopar, Mumbai.',
+    },
+    {
+        question:
+            'Which mobile networks are available? Will my Vodafone network work at the camp site?',
+        answer: 'Jio works in patches, BSNL is operational intermittently. We have a sim based Wi-Fi Router installed at three places across the park: Glamping Café, Mango Tree and at the Commune.',
+    },
+    {
+        question: 'Do I need to carry any specific linen, blankets or towels?',
+        answer: 'No, you will be provided with clean and sanitized hotel grade linen, comforters, towels (on demand for glamps). Please do carry a light warm jacket or a hoodie as it can get a bit nippy in the evenings. There is always a cold breeze since you are adjacent to the water body and surrounded by thick jungles.',
+    },
+    {
+        question:
+            'Should I carry a power bank for charging my phone and other devices/ gadgets?',
+        answer: 'Not really required! Charging points are available at the Café and in the glamps.',
+    },
+    {
+        question: 'Can I carry my own food?',
+        answer: 'Outside Food is strictly prohibited onsite. Outside Beverages are also Not Allowed at our Campsite.',
+    },
+    {
+        question: 'Can I carry my own Liquor/ Alcohol?',
+        answer: 'Yes, please do carry your own liquor; You may consume it at designated areas. Mixers, cold water and ice are available once you are onsite. Although, these are charged at an additional cost.',
+    },
+    {
+        question: 'Until what time is the Café open?',
+        answer: 'The Café is open 24 hrs for guests to sit and relax. Kitchen timings are 08:00 AM to 11:00 PM.',
+    },
+    {
+        question:
+            'I forgot a few things back home, what can you cover me up with?',
+        answer: 'Other than a Torch, umbrella, Shower gel, soap and shampoo or a dental kit (Chargeable at ₹ 50) which you can ask at the café desk.',
+    },
+    {
+        question: 'Do you sell Tobacco?',
+        answer: 'Yes, we do sell cigarettes if you run out of them.',
+    },
+    {
+        question: 'Can I get into the back waters?',
+        answer: 'Yes of course! We have a pier/ jetty with ease of ingress and egress via stairs which provide a layer of safety. There is a water buoy just about 20 meters from the jetty also. You are always advised to wear the life jacket while indulging in water sports. The site has no Life guard hence the life jackets are mandatory to enter the water at all times. We do have ample life jackets to enhance your experience!',
+    },
+    {
+        question: 'Is water available in the backwaters?',
+        answer: 'Yes, the dam water is clean and very refreshing and is available from September till April mid every year.',
+    },
+    {
+        question:
+            'What are the restroom facilities available for the campsite?',
+        answer: 'Since this is a camp site, we have common restrooms. They are available at the top level and the Café level. Each set of wash rooms has a gender neutral restroom with a shower, WC and a wash basin and an additional Men’s urinal to ensure the WC remains hygienic and usable for the ladies. The restrooms are cleaned and sanitized every hour from 4:00 pm until 11:00 pm and from 8:00 am to noon.',
+    },
+    {
+        question: 'Can I shower in the restrooms after a dip in the water?',
+        answer: 'Yes you can as the unisex restroom has a shower facility and enough space to change as well! Just that you will be anyways bathing in the water from the backwaters anyways. Food for thought!',
+    },
+    {
+        question: 'Can I order some starters to go with my party?',
+        answer: 'Absolutely, we have bar nibbles and oriental starters at the moment. Tandoor will be operational from November 2022. All starters are at an additional cost.',
+    },
+    {
+        question: 'Since its near the jungles, is the place safe?',
+        answer: 'The Park is part of 30 acres gated community. The gates are closed and locked at 8 pm so one can assume the level of safety. However, since we are amidst nature; situations and encounters can’t be ruled out. The site is very well lit up and all precautions have been taken to avoid encounters with the wriggly kinds.',
+    },
+    {
+        question: 'Are the dam waters safe?',
+        answer: 'Yes, the dam water is absolutely safe from predatory water bread animals/ mammals. Snakes cant be ruled out but have not been sighted very often especially near human presence.',
+    },
+    {
+        question: 'How deep is the dam water?',
+        answer: 'From our Jetty which is the recommended entry point, its 12 feet deep and gets deeper as you move to the centre of the water body. The estimated depth at the centre is 70 feet hence its Mandatory to wear Life jackets while entering the water or boating/ kayaking.',
+    },
+    {
+        question: 'Do you have a Live band or a DJ for the evenings?',
+        answer: 'DJ/ Live band is only on Saturdays during Oct to March. The rest of the days, you can request for exciting Bollywood and Punjabi, Deep House and Hip-Hop playlists to be played on our Night Club Grade pro audio set up. You can also play your own curated music playlists directly through our Bluetooth interface!',
+    },
+    {
+        question: 'What are the Tents like?',
+        answer: 'All our tents are of the same scale and quality and rest on a solid Iron structure which is hammered into the concrete at 16 points. The tents have 3 layers. The outer layer is a 400 GSM PVC material to shield off water, dust and extreme sunlight. The triangular design makes these tents reduce drag and hence wind resistance. The second inner layer is made of water repellent material, it is porous so that air can pass through and does not make you feel suffocated while protecting it from insects, bugs and reptiles from creeping in. The third layer is meant to enhance the aesthetics for a cosy stay. They have been designed by the founder who is an alpine and Himalayan mountaineer himself!',
+    },
+    {
+        question: 'What food can I expect at WaterRock!',
+        answer: 'Our Chef’s have worked at some of the finest hotels, clubs and diners in Mumbai, Pune and Punjabi hinterland. The range of cuisines and the quality of food will be at par with any good restaurant/ club in the city. Our menu includes dishes from Indian, Oriental and Western Cuisines. So be it a butter chicken, chicken lollipops, Lucknow kebabs or simply eggs of your choice at breakfast; it’ll be made to perfection.',
+    },
+    {
+        question: 'Can I bring my Hookah?',
+        answer: 'No, outside Hookah is NOT allowed. Please ask the service staff for flavours available.',
+    },
+    {
+        question: 'Do you have a Barbeque?',
+        answer: 'No, We don’t offer Barbeque as we have tandoor available.',
+    },
+    {
+        question: 'Kitchen Timings',
+        answer: 'Our Kitchens open at 8:00 AM and Close at 11:00 PM.',
+    },
+]
+
 export const FOOTER_LINKS = [
     {
         title: 'Quick Links',
@@ -257,10 +356,7 @@ export const FOOTER_LINKS = [
         links: [
             { href: 'mailto:support@example.com', label: 'help@waterrock.in' },
             { href: 'tel:support@example.com', label: '+91 87248294024' },
-            {
-                href: 'https://maps.google.com/?q=Your+Company+Address',
-                label: 'Reach WaterRock Bhor ↗',
-            },
+            { href: '/', label: 'WhatsApp' },
         ],
     },
     {
