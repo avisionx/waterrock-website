@@ -346,9 +346,9 @@ export const FOOTER_LINKS = [
         links: [
             { href: '/about', label: 'About' },
             { href: '/contact', label: 'Contact' },
-            { href: '/careers', label: 'Careers' },
+            { href: '/about#careers', label: 'Careers' },
             { href: '/faqs', label: 'FAQs' },
-            { href: '/sitemap.xml', label: 'Sitemap' },
+            { href: '/sitemap.xml', label: 'Sitemap ↗' },
         ],
     },
     {

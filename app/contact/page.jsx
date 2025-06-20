@@ -74,7 +74,8 @@ export default function ContactPage() {
                                 className="ml-auto flex items-center gap-2 text-sm transition-all group-hover:scale-110"
                                 href="/"
                             >
-                                Google Maps <ArrowRightIcon className="size-4" />
+                                Google Maps{' '}
+                                <ArrowRightIcon className="size-4" />
                             </Link>
                         </div>
                     </div>
