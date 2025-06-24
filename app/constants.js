@@ -39,15 +39,29 @@ import {
 
 import { getLocationSubmenu } from "@/app/utils"
 
-export const WEBSITE_SEO_TITLE = "WaterRock - Luxe Nature Retreat"
-export const WEBSITE_SEO_DESCRIPTION =
-    "Discover WaterRock - Luxury nature retreats featuring private villas, A-frame cabins, glamping tents, kayaking, bonfires, and much more."
 export const CONTACT_EMAIL = "help@waterrock.in"
 export const CONTACT_PHONE_NUMBER = "8745009633"
 export const WHATSAPP_URL =
     "https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
 
 export const CONTENT = {
+    seo: {
+        title: "WaterRock - Luxe Nature Retreat",
+        description:
+            "Discover WaterRock - Luxury nature retreats featuring private villas, A-frame cabins, glamping tents, kayaking, bonfires, and much more.",
+        keywords: [
+            "WaterRock",
+            "Bhor",
+            "Khopoli",
+            "Luxury Retreats",
+            "Nature Retreats",
+            "Glamping",
+            "Kayaking",
+            "Bonfire",
+            "Private Villas",
+            "A-frame Cabins",
+        ],
+    },
     homepage: {
         hero: {
             // title: can't abstract this please ask dev to update
