@@ -39,6 +39,9 @@ import {
 
 import { getLocationSubmenu } from "@/app/utils"
 
+export const WEBSITE_SEO_TITLE = "WaterRock - Luxe Nature Retreat"
+export const WEBSITE_SEO_DESCRIPTION =
+    "Discover WaterRock - Luxury nature retreats featuring private villas, A-frame cabins, glamping tents, kayaking, bonfires, and much more."
 export const CONTACT_EMAIL = "help@waterrock.in"
 export const CONTACT_PHONE_NUMBER = "8745009633"
 export const WHATSAPP_URL =

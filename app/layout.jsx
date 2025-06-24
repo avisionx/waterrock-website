@@ -6,6 +6,8 @@ import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import ScrollToTop from "@/components/ScrollToTop"
 
+import { WEBSITE_SEO_DESCRIPTION, WEBSITE_SEO_TITLE } from "@/app/constants"
+
 import "./globals.css"
 
 const fontHeading = Playfair_Display({ subsets: ["latin"] })
@@ -13,11 +15,10 @@ const fontBody = Inter({ subsets: ["latin"] })
 
 export const metadata = {
     title: {
-        template: `%s | WaterRock - Luxe Nature Retreat`,
-        default: "WaterRock - Luxe Nature Retreats",
+        template: `%s | ${WEBSITE_SEO_TITLE}`,
+        default: WEBSITE_SEO_TITLE,
     },
-    description:
-        "Discover WaterRock - Luxury nature retreats featuring private villas, A-frame cabins, glamping tents, kayaking, bonfires, and much more.",
+    description: WEBSITE_SEO_DESCRIPTION,
 }
 
 export default function RootLayout({ children }) {
