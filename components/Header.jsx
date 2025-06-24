@@ -1,14 +1,14 @@
-'use client'
+"use client"
 
-import { ChevronRightIcon, MenuIcon, XIcon } from 'lucide-react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { ChevronRightIcon, MenuIcon, XIcon } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import { useEffect, useState } from "react"
 
-import FancyButton from '@/components/FancyButton'
+import FancyButton from "@/components/FancyButton"
 
-import { MENU_DATA } from '@/app/constants'
-import LOGO from '@/assets/waterrock-logo.svg'
+import { MENU_DATA, WHATSAPP_URL } from "@/app/constants"
+import LOGO from "@/assets/waterrock-logo.svg"
 
 export default function Header() {
     const [stickyMenu, setStickyMenu] = useState(false)
@@ -17,27 +17,27 @@ export default function Header() {
 
     useEffect(() => {
         const handleStickyMenu = () => setStickyMenu(window.scrollY >= 5)
-        window.addEventListener('scroll', handleStickyMenu)
+        window.addEventListener("scroll", handleStickyMenu)
         handleStickyMenu()
-        return () => window.removeEventListener('scroll', handleStickyMenu)
+        return () => window.removeEventListener("scroll", handleStickyMenu)
     }, [])
 
     useEffect(() => {
         if (mobileMenuOpen) {
-            document.body.style.overflow = 'hidden'
+            document.body.style.overflow = "hidden"
         } else {
-            document.body.style.overflow = ''
+            document.body.style.overflow = ""
         }
         return () => {
-            document.body.style.overflow = ''
+            document.body.style.overflow = ""
         }
     }, [mobileMenuOpen])
 
     return (
         <header
             className={`fixed z-50 w-full transition-colors duration-300 ${
-                stickyMenu ? 'top-0 bg-white/50 shadow-sm backdrop-blur-xl' : ''
-            } ${mobileMenuOpen ? 'h-full' : ''}`}
+                stickyMenu ? "top-0 bg-white/50 shadow-sm backdrop-blur-xl" : ""
+            } ${mobileMenuOpen ? "h-full" : ""}`}
         >
             <div className="mx-auto flex max-w-9xl grid-cols-3 items-center p-4 lg:grid">
                 <div className="flex items-center gap-6 lg:hidden">
@@ -103,7 +103,7 @@ export default function Header() {
                 </div>
                 <div className="ml-auto flex items-center justify-end gap-4 lg:gap-6">
                     <Link
-                        href="https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
+                        href={WHATSAPP_URL}
                         target="_blank"
                         className="text-black transition-all hover:text-primary"
                     >
@@ -121,7 +121,7 @@ export default function Header() {
                         </svg>
                     </Link>
                     <FancyButton
-                        href="https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
+                        href={WHATSAPP_URL}
                         target="_blank"
                         text="Book Now"
                     />
@@ -170,7 +170,7 @@ function MobileMenuItem({ item, closeMenu }) {
                     {item.title}
                     <ChevronRightIcon
                         size={16}
-                        className={`transform transition-transform ${open ? 'rotate-90' : ''}`}
+                        className={`transform transition-transform ${open ? "rotate-90" : ""}`}
                     />
                 </button>
                 {open && (
@@ -191,7 +191,7 @@ function MobileMenuItem({ item, closeMenu }) {
     return (
         <li>
             <Link
-                href={item.href || '#'}
+                href={item.href || "#"}
                 onClick={closeMenu}
                 className="block py-2 text-sm font-semibold uppercase text-black/90"
             >
@@ -207,9 +207,9 @@ function Dropdown({ items, depth = 0 }) {
     return (
         <ul
             className={`absolute ${
-                depth === 0 ? 'left-0 top-full' : 'left-full top-0 -ml-2'
+                depth === 0 ? "left-0 top-full" : "left-full top-0 -ml-2"
             } block rounded-xl bg-white py-2 shadow-xl transition-all z-[${50 + depth}] min-w-[150px] max-w-[256px]`}
-            style={{ width: 'max-content' }}
+            style={{ width: "max-content" }}
         >
             {items.map((item, idx) => (
                 <li

@@ -1,13 +1,13 @@
-import 'server-only'
+import "server-only"
 
-import { ArrowRightIcon } from 'lucide-react'
-import Image from 'next/image'
-import Link from 'next/link'
+import { ArrowRightIcon } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
-import IMG_404 from '@/assets/404.svg'
+import IMG_404 from "@/assets/404.svg"
 
 export const metadata = {
-    title: '404',
+    title: "404",
 }
 
 export default function NotFoundPage() {

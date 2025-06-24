@@ -1,14 +1,21 @@
-import 'server-only'
+import "server-only"
 
-import { ArrowRightIcon, MailIcon, PhoneIcon } from 'lucide-react'
-import Link from 'next/link'
+import { ArrowRightIcon, MailIcon, PhoneIcon } from "lucide-react"
+import Link from "next/link"
 
-import CTA from '@/components/CTA'
-import FancyHeading from '@/components/FancyHeading'
-import PageTitle from '@/components/PageTitle'
+import CTA from "@/components/CTA"
+import FancyHeading from "@/components/FancyHeading"
+import PageTitle from "@/components/PageTitle"
+
+import {
+    CONTACT_EMAIL,
+    CONTACT_PHONE_NUMBER,
+    CONTENT,
+    WHATSAPP_URL,
+} from "@/app/constants"
 
 export const metadata = {
-    title: 'Contact Us',
+    title: CONTENT.contact.hero.title,
 }
 
 export default function ContactPage() {
@@ -16,26 +23,27 @@ export default function ContactPage() {
         <>
             <section className="mx-auto max-w-9xl px-4 pb-24 pt-36 lg:pt-44">
                 <PageTitle
-                    title="Contact Us"
-                    subtitle="Have questions or need assistance? We're here to help!"
+                    title={CONTENT.contact.hero.title}
+                    subtitle={CONTENT.contact.hero.subtitle}
                 />
                 <div className="mb-20 grid grid-cols-1 gap-6 lg:grid-cols-3">
                     <Link
-                        href="mailto:help@waterrock.in"
+                        href={`mailto:${CONTACT_EMAIL}`}
                         className="flex items-center gap-4 rounded-2xl bg-secondary/10 px-6 py-4 text-lg text-black/80 hover:underline"
                     >
                         <MailIcon className="size-8 text-secondary" />
-                        <span>help@waterrock.in</span>
+                        <span>{CONTACT_EMAIL}</span>
                     </Link>
                     <Link
-                        href="tel:+9187248294024"
+                        href={`tel:${CONTACT_PHONE_NUMBER}`}
                         className="flex items-center gap-4 rounded-2xl bg-primary/5 px-6 py-4 text-lg text-black/80 hover:underline"
                     >
                         <PhoneIcon className="size-8 text-primary" />
-                        <span>+91 87248294024</span>
+                        <span>{CONTACT_PHONE_NUMBER}</span>
                     </Link>
                     <Link
-                        href="mailto:help@waterrock.in"
+                        href={WHATSAPP_URL}
+                        target="_blank"
                         className="flex items-center gap-4 rounded-2xl bg-secondary/10 px-6 py-4 text-lg text-black/80 hover:underline"
                     >
                         <svg
@@ -53,17 +61,15 @@ export default function ContactPage() {
                         <span>WhatsApp</span>
                     </Link>
                 </div>
-                <FancyHeading text="Reach Us" />
+                <FancyHeading text={CONTENT.contact.reachUs.title} />
                 <p className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg">
-                    Feel free to visit our location or reach out through any of
-                    the contact methods above. We&apos;re always happy to
-                    connect and assist you!
+                    {CONTENT.contact.reachUs.subtitle}
                 </p>
                 <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
                     <div className="overflow-hidden rounded-2xl bg-primary/5 lg:col-span-2">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3790.324911162687!2d73.69195169999999!3d18.194986999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc28fd6cdbadfc9%3A0x2166478fbc8b22c6!2sWaterRock%20Hospitality!5e0!3m2!1sen!2sin!4v1750435636571!5m2!1sen!2sin"
-                            width={'100%'}
+                            width={"100%"}
                             title="bhor"
                             className="h-[300px] rounded-t-2xl"
                             allowFullScreen=""
@@ -78,7 +84,7 @@ export default function ContactPage() {
                                 className="ml-auto flex items-center gap-2 text-sm transition-all group-hover:scale-110"
                                 href="/"
                             >
-                                Google Maps{' '}
+                                Google Maps{" "}
                                 <ArrowRightIcon className="size-4" />
                             </Link>
                         </div>

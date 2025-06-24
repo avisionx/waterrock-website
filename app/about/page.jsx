@@ -1,16 +1,15 @@
-import 'server-only'
+import "server-only"
 
-import { EyeIcon, GemIcon, LeafIcon } from 'lucide-react'
-import Image from 'next/image'
+import Image from "next/image"
 
-import CTA from '@/components/CTA'
-import FancyHeading from '@/components/FancyHeading'
-import PageTitle from '@/components/PageTitle'
+import CTA from "@/components/CTA"
+import FancyHeading from "@/components/FancyHeading"
+import PageTitle from "@/components/PageTitle"
 
-import { STAY_OPTIONS } from '@/app/constants'
+import { CONTACT_EMAIL, CONTENT, STAY_OPTIONS } from "@/app/constants"
 
 export const metadata = {
-    title: 'About Us',
+    title: CONTENT.about.hero.title,
 }
 
 export default function AboutPage() {
@@ -18,63 +17,45 @@ export default function AboutPage() {
         <>
             <section className="mx-auto max-w-9xl px-4 pb-8 pt-36 lg:pt-44">
                 <PageTitle
-                    title="About Us"
-                    subtitle="Discover the essence of Waterrock, where nature meets luxury."
+                    title={CONTENT.about.hero.title}
+                    subtitle={CONTENT.about.hero.subtitle}
                 />
                 <div className="mb-20 grid grid-cols-1 gap-6 lg:grid-cols-3">
-                    {MVV.map(({ title, description, Icon }, index) => (
-                        <div
-                            key={title}
-                            className={`${index % 2 == 0 ? 'bg-secondary/15' : 'bg-primary/5'} flex flex-col gap-2 rounded-2xl p-6 transition-all hover:scale-[1.02]`}
-                        >
-                            <div className="relative flex items-center gap-4 text-black/80">
-                                <p className="text-2xl font-medium">{title}</p>
-                                <Icon
-                                    className={`${index % 2 == 0 ? 'text-secondary' : 'text-primary'} absolute right-0 size-10`}
-                                />
+                    {CONTENT.about.hero.features.map(
+                        ({ title, description, Icon }, index) => (
+                            <div
+                                key={title}
+                                className={`${index % 2 == 0 ? "bg-secondary/15" : "bg-primary/5"} flex flex-col gap-2 rounded-2xl p-6 transition-all hover:scale-[1.02]`}
+                            >
+                                <div className="relative flex items-center gap-4 text-black/80">
+                                    <p className="text-2xl font-medium">
+                                        {title}
+                                    </p>
+                                    <Icon
+                                        className={`${index % 2 == 0 ? "text-secondary" : "text-primary"} absolute right-0 size-10`}
+                                    />
+                                </div>
+                                <p className="text-black/70">{description}</p>
                             </div>
-                            <p className="text-black/70">{description}</p>
-                        </div>
-                    ))}
+                        )
+                    )}
                 </div>
-                <FancyHeading text="Our Journey" />
+                <FancyHeading text={CONTENT.about.journey.title} />
                 <p className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg">
-                    Nestled amidst nature, Waterrock’s journey began with a
-                    vision to blend luxury and sustainability. Our story is one
-                    of passion, innovation, and a deep respect for the
-                    environment.
+                    {CONTENT.about.journey.subtitle}
                 </p>
                 <div className="mx-auto mt-16 max-w-5xl text-center text-black/70 md:text-lg">
-                    Waterrock was founded by a group of nature enthusiasts who
-                    dreamed of creating a sanctuary where luxury and
-                    sustainability coexist. Inspired by the tranquil beauty of
-                    untouched landscapes, we set out to design a retreat that
-                    honors the environment while offering exceptional comfort.
-                    Every detail, from our eco-friendly architecture to our
-                    locally sourced cuisine, reflects our commitment to
-                    responsible hospitality. Over the years, Waterrock has grown
-                    into a vibrant community, welcoming guests from around the
-                    world to experience the harmony of nature and refined
-                    living. Our journey continues, guided by passion,
-                    innovation, and respect for the earth.
+                    {CONTENT.about.journey.para1}
                 </div>
                 <div className="mx-auto mb-16 mt-8 max-w-5xl text-center text-black/70 md:text-lg">
-                    At Waterrock, we believe in the power of connection—between
-                    people, nature, and culture. Our mission is to create
-                    unforgettable experiences that inspire guests to cherish and
-                    protect the natural world. We invite you to join us on this
-                    journey, where every moment is an opportunity to discover
-                    the beauty of life in harmony with nature.
+                    {CONTENT.about.journey.para2}
                 </div>
             </section>
             <CTA />
             <section className="mx-auto max-w-9xl px-4 pb-24">
-                <FancyHeading text="Our Locations" />
+                <FancyHeading text={CONTENT.about.location.title} />
                 <p className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg">
-                    Waterrock currently has 1 location Bhor and Khopoli (Coming
-                    Soon). Each destination offers a unique blend of natural
-                    beauty, luxury accommodations, and immersive experiences
-                    that reflect the essence of Waterrock.
+                    {CONTENT.about.location.subtitle}
                 </p>
                 <div className="mx-auto mt-16 grid max-w-4xl grid-cols-2 gap-6 lg:gap-12">
                     {STAY_OPTIONS.map(({ location, title, options }) => {
@@ -104,23 +85,18 @@ export default function AboutPage() {
                 </div>
             </section>
             <section className="mx-auto max-w-9xl px-4 pb-24" id="careers">
-                <FancyHeading text="Career @ WaterRock" />
+                <FancyHeading text={CONTENT.about.career.title} />
                 <p className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg">
-                    Join the Waterrock family and be part of a team that values
-                    passion, innovation, and a commitment to excellence. Explore
-                    exciting career opportunities in hospitality,
-                    sustainability, and more. Together, we can create memorable
-                    experiences for our guests while making a positive impact on
-                    the environment.
+                    {CONTENT.about.career.subtitle}
                 </p>
                 <div className="mx-auto mt-12 max-w-7xl rounded-2xl bg-secondary/10 p-6 text-center text-black/70">
                     <p className="text-lg">
-                        Interested in joining WaterRock family?{' '}
+                        {CONTENT.about.career.text}{" "}
                         <a
-                            href="mailto:help@waterrock.in"
+                            href={`mailto:${CONTACT_EMAIL}`}
                             className="text-primary hover:underline"
                         >
-                            Send us your resume at help@waterrock.in
+                            {CONTENT.about.career.link}
                         </a>
                         .
                     </p>
@@ -129,24 +105,3 @@ export default function AboutPage() {
         </>
     )
 }
-
-const MVV = [
-    {
-        title: 'Mission',
-        description:
-            'To provide an unparalleled hospitality experience that connects guests with nature, culture, and luxury.',
-        Icon: LeafIcon,
-    },
-    {
-        title: 'Vision',
-        description:
-            'To be a leading destination for eco-luxury retreats, inspiring sustainable tourism and enriching lives.',
-        Icon: EyeIcon,
-    },
-    {
-        title: 'Values',
-        description:
-            'Sustainability, Excellence, Community, Innovation, and Authenticity.',
-        Icon: GemIcon,
-    },
-]

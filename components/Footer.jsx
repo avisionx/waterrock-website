@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image"
+import Link from "next/link"
 
-import { FOOTER_LINKS } from '@/app/constants'
-import LOGO from '@/assets/waterrock-logo.svg'
+import { FOOTER_LINKS } from "@/app/constants"
+import LOGO from "@/assets/waterrock-logo.svg"
 
 export default function Footer() {
     return (
@@ -23,7 +23,7 @@ export default function Footer() {
                             </p>
                             <ul className="space-y-2">
                                 {section.links.map((link) => {
-                                    const isExternal = link.label.includes('↗')
+                                    const isExternal = link.label.includes("↗")
                                     return (
                                         <li key={link.label}>
                                             <Link
@@ -31,12 +31,12 @@ export default function Footer() {
                                                 className="text-sm text-black/80 hover:underline"
                                                 target={
                                                     isExternal
-                                                        ? '_blank'
+                                                        ? "_blank"
                                                         : undefined
                                                 }
                                                 rel={
                                                     isExternal
-                                                        ? 'noopener noreferrer'
+                                                        ? "noopener noreferrer"
                                                         : undefined
                                                 }
                                             >
@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
                 <div className="mt-8 border-t border-black/5 pt-8 text-sm text-black/80">
                     <p>
-                        Made with ❤ by{' '}
+                        Made with ❤ by{" "}
                         <Link
                             href="https://avisionx.net/"
                             className="underline"
@@ -62,11 +62,11 @@ export default function Footer() {
                         </Link>
                     </p>
                     <p className="mt-1">
-                        Copyright © {new Date().getFullYear()}{' '}
+                        Copyright © {new Date().getFullYear()}{" "}
                         <Link href="/" className="underline">
                             WaterRock
                         </Link>
-                        . All Rights Reserved.{' '}
+                        . All Rights Reserved.{" "}
                     </p>
                 </div>
             </div>

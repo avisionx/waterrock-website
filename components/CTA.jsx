@@ -1,19 +1,24 @@
-'use client'
+"use client"
 
-import Link from 'next/link'
+import Link from "next/link"
 
-import FancyButton from '@/components/FancyButton'
+import FancyButton from "@/components/FancyButton"
+
+import { CONTENT, WHATSAPP_URL } from "@/app/constants"
 
 export default function CTA() {
     return (
         <section className="pb-24">
             <div className="mx-auto max-w-9xl px-4 py-4 text-center">
                 <p className="font-heading text-5xl text-black">
-                    Your <span className="text-primary">Journey</span>{' '}
-                    Shouldn&apos;t End Here.
+                    {CONTENT.cta.titlePart1}{" "}
+                    <span className="text-primary">
+                        {CONTENT.cta.titlePart2}
+                    </span>{" "}
+                    {CONTENT.cta.titlePart3}
                 </p>
                 <p className="mt-4 text-black/80 md:text-lg">
-                    Experience Nature with Comfort — Reserve Your Stay Today
+                    {CONTENT.cta.subtitle}
                 </p>
                 <div className="mt-8 flex justify-center gap-4 pt-2">
                     <Link
@@ -23,7 +28,7 @@ export default function CTA() {
                         Explore Stays
                     </Link>
                     <FancyButton
-                        href="https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
+                        href={WHATSAPP_URL}
                         target="_blank"
                         text="Book Now"
                     />

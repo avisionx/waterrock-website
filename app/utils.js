@@ -3,7 +3,7 @@ export const getLocationSubmenu = (stayOptions) =>
         if (options.length === 0) {
             return {
                 title,
-                href: '#',
+                href: "#",
             }
         }
 

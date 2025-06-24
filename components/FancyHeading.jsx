@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import { DiamondIcon } from 'lucide-react'
+import { DiamondIcon } from "lucide-react"
 
 export default function FancyHeading({ text }) {
     return (

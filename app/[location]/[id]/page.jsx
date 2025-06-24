@@ -1,13 +1,13 @@
-import 'server-only'
+import "server-only"
 
-import { CalendarDays, CheckCircle2, Clock, Info, Users } from 'lucide-react'
-import Image from 'next/image'
+import { CalendarDays, CheckCircle2, Clock, Info, Users } from "lucide-react"
+import Image from "next/image"
 
-import CTA from '@/components/CTA'
-import FancyButton from '@/components/FancyButton'
-import PageTitle from '@/components/PageTitle'
+import CTA from "@/components/CTA"
+import FancyButton from "@/components/FancyButton"
+import PageTitle from "@/components/PageTitle"
 
-import { STAY_DETAILS, STAY_OPTIONS } from '@/app/constants'
+import { STAY_DETAILS, STAY_OPTIONS, WHATSAPP_URL } from "@/app/constants"
 
 export async function generateStaticParams() {
     const paths = STAY_OPTIONS.flatMap(({ location, options }) =>
@@ -65,7 +65,7 @@ export default async function StayPage({ params }) {
                             </div>
                         </div>
                         <FancyButton
-                            href="https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
+                            href={WHATSAPP_URL}
                             target="_blank"
                             text="Book Now"
                         />

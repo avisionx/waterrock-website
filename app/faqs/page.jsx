@@ -1,10 +1,12 @@
-import 'server-only'
+import "server-only"
 
-import AllFAQs from '@/components/AllFAQs'
-import PageTitle from '@/components/PageTitle'
+import AllFAQs from "@/components/AllFAQs"
+import PageTitle from "@/components/PageTitle"
+
+import { CONTENT } from "@/app/constants"
 
 export const metadata = {
-    title: 'FAQs',
+    title: CONTENT.faqs.title,
 }
 
 export default function FaqsPage() {
@@ -12,8 +14,8 @@ export default function FaqsPage() {
         <>
             <section className="mx-auto max-w-9xl px-4 pb-24 pt-36 lg:pt-44">
                 <PageTitle
-                    title="FAQs"
-                    subtitle="Find answers to the most common questions about Waterrock."
+                    title={CONTENT.faqs.title}
+                    subtitle={CONTENT.faqs.subtitle}
                 />
                 <AllFAQs />
             </section>

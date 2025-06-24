@@ -37,7 +37,6 @@ const DOMAIN = 'https://waterrock.in';
 const DAILY_08 = [
     '/about',
     '/contact',
-    '/careers',
     '/faqs',
 ]
 

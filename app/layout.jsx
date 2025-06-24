@@ -1,23 +1,23 @@
-import 'server-only'
+import "server-only"
 
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display } from "next/font/google"
 
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import ScrollToTop from '@/components/ScrollToTop'
+import Footer from "@/components/Footer"
+import Header from "@/components/Header"
+import ScrollToTop from "@/components/ScrollToTop"
 
-import './globals.css'
+import "./globals.css"
 
-const fontHeading = Playfair_Display({ subsets: ['latin'] })
-const fontBody = Inter({ subsets: ['latin'] })
+const fontHeading = Playfair_Display({ subsets: ["latin"] })
+const fontBody = Inter({ subsets: ["latin"] })
 
 export const metadata = {
     title: {
         template: `%s | WaterRock - Luxe Nature Retreat`,
-        default: 'WaterRock - Luxe Nature Retreats',
+        default: "WaterRock - Luxe Nature Retreats",
     },
     description:
-        'Discover WaterRock - Luxury nature retreats featuring private villas, A-frame cabins, glamping tents, kayaking, bonfires, and much more.',
+        "Discover WaterRock - Luxury nature retreats featuring private villas, A-frame cabins, glamping tents, kayaking, bonfires, and much more.",
 }
 
 export default function RootLayout({ children }) {

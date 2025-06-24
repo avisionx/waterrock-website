@@ -1,16 +1,16 @@
-'use client'
+"use client"
 
-import { MinusIcon, PlusIcon } from 'lucide-react'
-import { useState } from 'react'
+import { MinusIcon, PlusIcon } from "lucide-react"
+import { useState } from "react"
 
-import { FAQS } from '@/app/constants'
+import { CONTENT } from "@/app/constants"
 
 export default function FAQs() {
     const [activeIdx, setActiveIdx] = useState(null)
 
     return (
         <div className="space-y-4">
-            {FAQS.map((faq, idx) => {
+            {CONTENT.homepage.faqs.features.map((faq, idx) => {
                 const isOpen = idx === activeIdx
                 return (
                     <div

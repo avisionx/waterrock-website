@@ -1,14 +1,14 @@
-'use client'
+"use client"
 
-import Link from 'next/link'
-import { useState } from 'react'
+import Link from "next/link"
+import { useState } from "react"
 
-import { ALL_FAQS } from '@/app/constants'
+import { CONTENT } from "@/app/constants"
 
 export default function AllFAQs() {
-    const [search, setSearch] = useState('')
+    const [search, setSearch] = useState("")
 
-    const filteredFaqs = ALL_FAQS.filter(
+    const filteredFaqs = CONTENT.faqs.features.filter(
         (faq) =>
             faq.question.toLowerCase().includes(search.toLowerCase()) ||
             faq.answer.toLowerCase().includes(search.toLowerCase())
@@ -33,7 +33,7 @@ export default function AllFAQs() {
                     <div className="py-8 text-center text-black/70">
                         No FAQs matched your search.
                         <br />
-                        Still have questions?{' '}
+                        Still have questions?{" "}
                         <Link href="/contact" className="underline">
                             Contact us!
                         </Link>

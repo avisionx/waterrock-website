@@ -1,9 +1,9 @@
-'use client'
+"use client"
 
-import { ArrowRightIcon } from 'lucide-react'
-import Link from 'next/link'
+import { ArrowRightIcon } from "lucide-react"
+import Link from "next/link"
 
-export default function FancyButton({ text = '', href = '/', ...rest }) {
+export default function FancyButton({ text = "", href = "/", ...rest }) {
     return (
         <Link
             href={href}
