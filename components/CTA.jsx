@@ -23,7 +23,7 @@ export default function CTA() {
                         Explore Stays
                     </Link>
                     <FancyButton
-                        href="https://booking.posease.com/hotel/booking/67b3ba149fd46d2f59fcccc1"
+                        href="https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
                         target="_blank"
                         text="Book Now"
                     />

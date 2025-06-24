@@ -51,7 +51,7 @@ export default function HomePage() {
                                 Explore Stays
                             </Link>
                             <FancyButton
-                                href="https://booking.posease.com/hotel/booking/67b3ba149fd46d2f59fcccc1"
+                                href="https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
                                 target="_blank"
                                 text="Book Now"
                             />
@@ -290,11 +290,11 @@ export default function HomePage() {
                         stay.
                     </p>
                     <div className="no-scrollbar mt-12 overflow-x-auto xl:overflow-visible">
-                        <div className="flex grid-cols-2 gap-6 xl:grid xl:grid-cols-4">
+                        <div className="flex grid-cols-2 gap-4 xl:grid xl:grid-cols-4 xl:gap-6">
                             {TESTIMONIALS.map((t, idx) => (
                                 <div
                                     key={idx}
-                                    className="max-w-[350px] shrink-0 rounded-2xl bg-primary/5 p-6 xl:max-w-[500px]"
+                                    className="max-w-[300px] shrink-0 rounded-2xl bg-primary/5 p-6 xl:max-w-[500px]"
                                 >
                                     <div className="mb-2 flex items-center">
                                         <div className="mr-4 size-12 rounded-full bg-secondary" />

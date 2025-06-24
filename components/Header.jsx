@@ -103,7 +103,8 @@ export default function Header() {
                 </div>
                 <div className="ml-auto flex items-center justify-end gap-4 lg:gap-6">
                     <Link
-                        href="/"
+                        href="https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
+                        target="_blank"
                         className="text-black transition-all hover:text-primary"
                     >
                         <svg
@@ -120,7 +121,7 @@ export default function Header() {
                         </svg>
                     </Link>
                     <FancyButton
-                        href="https://booking.posease.com/hotel/booking/67b3ba149fd46d2f59fcccc1"
+                        href="https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
                         target="_blank"
                         text="Book Now"
                     />
