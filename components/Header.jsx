@@ -53,7 +53,13 @@ export default function Header() {
                         )}
                     </button>
                     <Link href="/">
-                        <Image src={LOGO} width={84} height={40} alt="" />
+                        <Image
+                            src={LOGO}
+                            width={84}
+                            height={40}
+                            alt=""
+                            priority
+                        />
                     </Link>
                 </div>
                 <nav className="hidden items-center lg:flex">
@@ -98,6 +104,7 @@ export default function Header() {
                             height={40}
                             className="transition-all"
                             alt=""
+                            priority
                         />
                     </Link>
                 </div>

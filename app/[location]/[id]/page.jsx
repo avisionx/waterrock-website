@@ -39,6 +39,7 @@ export default async function StayPage({ params }) {
                         height={400}
                         alt=""
                         className="w-full rounded-2xl"
+                        priority
                     />
                     <div>
                         <div className="mb-12 space-y-8 text-black/70">

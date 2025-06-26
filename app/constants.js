@@ -688,7 +688,7 @@ export const FOOTER_LINKS = [
             { href: `mailto:${CONTACT_EMAIL}`, label: CONTACT_EMAIL },
             {
                 href: `tel:${CONTACT_PHONE_NUMBER}`,
-                label: CONTACT_PHONE_NUMBER,
+                label: `+91 ${CONTACT_PHONE_NUMBER}`,
             },
             { href: WHATSAPP_URL, label: "WhatsApp ↗" },
         ],
@@ -696,13 +696,19 @@ export const FOOTER_LINKS = [
     {
         title: "Social",
         links: [
-            { href: "https://youtube.com/yourchannel", label: "YouTube ↗" },
-            { href: "https://twitter.com/yourhandle", label: "Twitter ↗" },
             {
-                href: "https://linkedin.com/company/yourcompany",
-                label: "LinkedIn ↗",
+                href: "https://www.instagram.com/waterrock_official",
+                label: "Instagram ↗",
             },
-            { href: "https://instagram.com/yourhandle", label: "Instagram ↗" },
+            {
+                href: "https://www.facebook.com/waterrock.official",
+                label: "Facebook ↗",
+            },
+            {
+                href: "https://www.youtube.com/@waterrock7067",
+                label: "YouTube ↗",
+            },
+            { href: "https://g.co/kgs/Vjxz5PG", label: "Google ↗" },
         ],
     },
 ]

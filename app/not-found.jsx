@@ -13,7 +13,7 @@ export const metadata = {
 export default function NotFoundPage() {
     return (
         <section className="mx-auto flex min-h-[60vh] max-w-9xl flex-col items-center justify-center gap-6 px-4 pb-32 pt-56">
-            <Image src={IMG_404} alt="" className="max-w-md" />
+            <Image src={IMG_404} alt="" className="max-w-md" priority />
             <div className="flex flex-col items-center justify-center">
                 <p className="text-black/70 md:text-lg">
                     Oops! The page you are looking for does not exist.

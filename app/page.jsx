@@ -1,6 +1,11 @@
 import "server-only"
 
-import { ArrowRightIcon, MapPinIcon, MouseIcon } from "lucide-react"
+import {
+    ArrowRightIcon,
+    FullscreenIcon,
+    MapPinIcon,
+    MouseIcon,
+} from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -8,6 +13,7 @@ import CTA from "@/components/CTA"
 import FAQs from "@/components/FAQs"
 import FancyButton from "@/components/FancyButton"
 import FancyHeading from "@/components/FancyHeading"
+import VideoPlayer from "@/components/VideoPlayer"
 
 import { CONTENT, STAY_OPTIONS, WHATSAPP_URL } from "@/app/constants"
 import SHOWCASE_IMG_1 from "@/assets/landing/showcase-1.webp"
@@ -60,25 +66,29 @@ export default function HomePage() {
                                 src={SHOWCASE_IMG_6}
                                 alt=""
                                 className="h-full w-full object-cover"
+                                priority
                             />
                         </div>
-                        <div className="col-span-2 row-span-2 overflow-hidden rounded-md bg-primary">
-                            <video
+                        <div className="group relative col-span-2 row-span-2 overflow-hidden rounded-md bg-primary">
+                            <VideoPlayer
                                 src="/videos/waterrock-bhor-showcase.mp4"
+                                highres="/videos/waterrock-bhor-showcase-highres.mp4"
                                 poster="/images/waterrock-bhor-showcase-poster.webp"
-                                autoPlay
-                                loop
-                                muted
-                                controls={false}
-                                playsInline
-                                className="h-full w-full rounded-md object-cover"
+                                className="h-full w-full cursor-pointer rounded-md object-cover"
                             />
+                            <div className="pointer-events-none absolute bottom-0 left-0 right-0 flex items-center px-4 py-2 text-white transition-all group-hover:bg-black/50">
+                                <span className="text-xs transition-all">
+                                    Immerse
+                                </span>
+                                <FullscreenIcon className="ml-auto size-3.5" />
+                            </div>
                         </div>
                         <div className="col-span-1 row-span-3 overflow-hidden rounded-md bg-accent">
                             <Image
                                 src={SHOWCASE_IMG_1}
                                 alt=""
                                 className="h-full w-full object-cover"
+                                priority
                             />
                         </div>
                         <div className="col-span-1 row-span-2 overflow-hidden rounded-md bg-white">
@@ -86,6 +96,7 @@ export default function HomePage() {
                                 src={SHOWCASE_IMG_2}
                                 alt=""
                                 className="h-full w-full object-cover"
+                                priority
                             />
                         </div>
                         <div className="col-span-1 row-span-1 overflow-hidden rounded-md bg-black">
@@ -93,6 +104,7 @@ export default function HomePage() {
                                 src={SHOWCASE_IMG_5}
                                 alt=""
                                 className="h-full w-full object-cover"
+                                priority
                             />
                         </div>
                         <div className="col-span-1 row-span-2 overflow-hidden rounded-md bg-white">
@@ -100,6 +112,7 @@ export default function HomePage() {
                                 src={SHOWCASE_IMG_3}
                                 alt=""
                                 className="h-full w-full object-cover"
+                                priority
                             />
                         </div>
                         <div className="col-span-2 row-span-1 max-h-44 overflow-hidden rounded-md bg-secondary">
@@ -107,6 +120,7 @@ export default function HomePage() {
                                 src={SHOWCASE_IMG_7}
                                 alt=""
                                 className="h-full w-full object-cover object-top"
+                                priority
                             />
                         </div>
                         <div className="col-span-1 row-span-1 overflow-hidden rounded-md bg-black">
@@ -114,6 +128,7 @@ export default function HomePage() {
                                 src={SHOWCASE_IMG_4}
                                 alt=""
                                 className="h-full w-full object-cover"
+                                priority
                             />
                         </div>
                     </div>
@@ -140,6 +155,7 @@ export default function HomePage() {
                                                 height={512}
                                                 className="h-full w-full object-cover transition-all group-hover:scale-110"
                                                 alt=""
+                                                priority
                                             />
                                             <div className="z-1 absolute top-0 flex h-full w-full flex-col bg-black/10 from-black/40 to-primary/30 px-6 py-6 text-white transition-all group-hover:bg-gradient-to-br group-hover:text-accent">
                                                 <p className="mb-0.5 max-w-[300px] font-heading text-2xl font-extralight tracking-wide">
@@ -170,6 +186,7 @@ export default function HomePage() {
                                         height={512}
                                         className="h-full w-full object-cover transition-all group-hover:scale-110"
                                         alt=""
+                                        priority
                                     />
                                     <div className="z-1 absolute top-0 flex h-full w-full cursor-not-allowed flex-col bg-gradient-to-br from-black/40 to-primary/30 px-6 py-6 text-white/90">
                                         <p className="mb-0.5 max-w-[300px] font-heading text-2xl font-extralight tracking-wide">
