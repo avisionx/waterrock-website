@@ -478,6 +478,7 @@ export const STAY_OPTIONS = [
                     "Electric Kettle",
                     "Wi-Fi (Intermittent)",
                 ],
+                imageCount: 5,
             },
             {
                 id: "a-frame-cabins",
@@ -527,6 +528,7 @@ export const STAY_OPTIONS = [
                     "Airconditioning",
                     "Wi-Fi (Intermittent)",
                 ],
+                imageCount: 3,
             },
             {
                 id: "soulspree-bungalow",
@@ -578,6 +580,7 @@ export const STAY_OPTIONS = [
                     "Fridge",
                     "Inverter back-up (upto 8 hrs)",
                 ],
+                imageCount: 5,
             },
             {
                 id: "tents-glamping",
@@ -631,6 +634,7 @@ export const STAY_OPTIONS = [
                     "Privacy Fabric",
                     "Fan (On Demand)",
                 ],
+                imageCount: 4,
             },
         ],
     },

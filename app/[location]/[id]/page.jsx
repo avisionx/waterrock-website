@@ -1,10 +1,10 @@
 import "server-only"
 
 import { CalendarDays, CheckCircle2, Clock, Info, Users } from "lucide-react"
-import Image from "next/image"
 
 import CTA from "@/components/CTA"
 import FancyButton from "@/components/FancyButton"
+import LocationImageSlider from "@/components/LocationImageSlider"
 import PageTitle from "@/components/PageTitle"
 
 import { STAY_DETAILS, STAY_OPTIONS, WHATSAPP_URL } from "@/app/constants"
@@ -33,13 +33,10 @@ export default async function StayPage({ params }) {
             <section className="mx-auto max-w-9xl px-4 pb-24 pt-36 lg:pt-44">
                 <PageTitle title={STAY.name} subtitle={STAY.shortDescription} />
                 <div className="mx-auto mb-12 grid max-w-7xl grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
-                    <Image
-                        src={`/images/locations/${location}/${id}.webp`}
-                        width={400}
-                        height={400}
-                        alt=""
-                        className="w-full rounded-2xl"
-                        priority
+                    <LocationImageSlider
+                        location={location}
+                        id={id}
+                        imageCount={STAY.imageCount}
                     />
                     <div>
                         <div className="mb-12 space-y-8 text-black/70">
