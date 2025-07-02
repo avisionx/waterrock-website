@@ -60,10 +60,10 @@ export default function HomePage() {
                             {CONTENT.homepage.hero.scrollText}
                         </div>
                     </div>
-                    <div className="grid h-full grid-cols-4 grid-rows-4 gap-3 lg:col-span-2">
+                    <div className="grid h-full grid-cols-4 grid-rows-3 gap-3 lg:col-span-2">
                         <div className="col-span-1 row-span-1 overflow-hidden rounded-md bg-accent">
                             <Image
-                                src={SHOWCASE_IMG_6}
+                                src={SHOWCASE_IMG_6} // food
                                 alt=""
                                 className="h-full w-full object-cover"
                                 priority
@@ -83,17 +83,25 @@ export default function HomePage() {
                                 <FullscreenIcon className="ml-auto size-3.5" />
                             </div>
                         </div>
-                        <div className="col-span-1 row-span-3 overflow-hidden rounded-md bg-accent">
+                        <div className="col-span-1 row-span-1 overflow-hidden rounded-md bg-accent">
                             <Image
-                                src={SHOWCASE_IMG_1}
+                                src={SHOWCASE_IMG_3} // night house
                                 alt=""
                                 className="h-full w-full object-cover"
                                 priority
                             />
                         </div>
-                        <div className="col-span-1 row-span-2 overflow-hidden rounded-md bg-white">
+                        <div className="col-span-1 row-span-1 overflow-hidden rounded-md bg-white">
                             <Image
-                                src={SHOWCASE_IMG_2}
+                                src={SHOWCASE_IMG_2} // charm
+                                alt=""
+                                className="h-full w-full object-cover"
+                                priority
+                            />
+                        </div>
+                        <div className="col-span-1 row-span-2 overflow-hidden rounded-md bg-accent">
+                            <Image
+                                src={SHOWCASE_IMG_1} // a frame
                                 alt=""
                                 className="h-full w-full object-cover"
                                 priority
@@ -101,31 +109,23 @@ export default function HomePage() {
                         </div>
                         <div className="col-span-1 row-span-1 overflow-hidden rounded-md bg-black">
                             <Image
-                                src={SHOWCASE_IMG_5}
+                                src={SHOWCASE_IMG_5} // boating
                                 alt=""
                                 className="h-full w-full object-cover"
                                 priority
                             />
                         </div>
-                        <div className="col-span-1 row-span-2 overflow-hidden rounded-md bg-white">
+                        <div className="col-span-1 row-span-1 overflow-hidden rounded-md bg-white">
                             <Image
-                                src={SHOWCASE_IMG_3}
+                                src={SHOWCASE_IMG_7} // night cafe
                                 alt=""
                                 className="h-full w-full object-cover"
-                                priority
-                            />
-                        </div>
-                        <div className="col-span-2 row-span-1 max-h-44 overflow-hidden rounded-md bg-secondary">
-                            <Image
-                                src={SHOWCASE_IMG_7}
-                                alt=""
-                                className="h-full w-full object-cover object-top"
                                 priority
                             />
                         </div>
                         <div className="col-span-1 row-span-1 overflow-hidden rounded-md bg-black">
                             <Image
-                                src={SHOWCASE_IMG_4}
+                                src={SHOWCASE_IMG_4} // sun house
                                 alt=""
                                 className="h-full w-full object-cover"
                                 priority

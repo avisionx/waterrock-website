@@ -61,6 +61,10 @@ export default function ContactPage() {
                         <span>WhatsApp</span>
                     </Link>
                 </div>
+                <FancyHeading text={CONTENT.contact.corporateBookings.title} />
+                <p className="mx-auto mb-14 mt-4 max-w-3xl text-center text-black/70 md:text-lg">
+                    {CONTENT.contact.corporateBookings.subtitle}
+                </p>
                 <FancyHeading text={CONTENT.contact.reachUs.title} />
                 <p className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg">
                     {CONTENT.contact.reachUs.subtitle}

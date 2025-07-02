@@ -39,8 +39,8 @@ import {
 
 import { getLocationSubmenu } from "@/app/utils"
 
-export const CONTACT_EMAIL = "help@waterrock.in"
-export const CONTACT_PHONE_NUMBER = "8745009633"
+export const CONTACT_EMAIL = "cs.waterrock@gmail.com"
+export const CONTACT_PHONE_NUMBER = "9021679953"
 export const WHATSAPP_URL =
     "https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
 
@@ -48,7 +48,7 @@ export const CONTENT = {
     seo: {
         title: "WaterRock - Luxe Nature Retreat",
         description:
-            "Discover WaterRock - Luxury nature retreats featuring private villas, A-frame cabins, glamping tents, kayaking, bonfires, and much more.",
+            "Discover WaterRock - Nature retreats featuring private villas, A-frame cabins, glamping tents, kayaking, bonfires, and much more.",
         keywords: [
             "WaterRock",
             "Bhor",
@@ -118,7 +118,7 @@ export const CONTENT = {
                     icon: UtensilsIcon,
                 },
                 {
-                    name: "BoHo Themed Café with Wi-Fi",
+                    name: "BoHo Themed Café",
                     icon: CoffeeIcon,
                 },
                 {
@@ -130,7 +130,7 @@ export const CONTENT = {
                     icon: TreesIcon,
                 },
                 {
-                    name: "Ice Maker Machine",
+                    name: "Ice(Chargeable)",
                     icon: SnowflakeIcon,
                 },
                 {
@@ -178,7 +178,7 @@ export const CONTENT = {
                     icon: ShieldCheckIcon,
                 },
             ],
-            note: "Please note water activities in Dam are seasonal and as per govt. norms and notifications. Please ask for the same",
+            note: "Please note water activities in Dam are seasonal and as per government norms and notifications. Please ask for the same",
         },
         whyChoose: {
             title: "Why Choose WaterRock?",
@@ -187,8 +187,8 @@ export const CONTENT = {
             features: [
                 "Wake up to birdsong and sleep in plush comfort — villas, tents, and lakeside chalets that bring nature to your doorstep.",
                 "Bonfires, kayaking, and night boating — every WaterRock getaway is an experience crafted to connect you with what truly matters.",
-                "From welcome drinks to seamless service, our team takes care of everything — so you just soak in the vibes and views.",
-                "Whether Bhor, Lonavala, or Karjat — our signature charm follows you. Pick your vibe, not your standard.",
+                "From warm welcome to seamless service, our team takes care of everything — so you just soak in the vibes and views.",
+                "Whether Pune or Mumbai — our signature charm follows you. Pick your vibe, not your standard.",
             ],
         },
         testimonials: {
@@ -233,15 +233,15 @@ export const CONTENT = {
                 {
                     question:
                         "Are mobile networks available? Will my Vodafone network work?",
-                    answer: "Jio works in patches, BSNL works intermittently. A SIM-based Wi-Fi router is available at the Glamping Café, Mango Tree, and Commune areas.",
+                    answer: "Jio works in patches, BSNL works intermittently. A SIM-based Wi-Fi router is available at the cafe with limited connectivity",
                 },
                 {
                     question: "Can I carry my own food or alcohol?",
-                    answer: "Outside food and beverages are strictly prohibited. ✅ You can carry your own liquor, but it must be consumed in designated areas. Mixers, cold water, and ice are available for a charge.",
+                    answer: "Outside food and beverages are strictly prohibited. You can carry your own liquor, but it must be consumed in designated areas. Mixers, cold water, and ice are available for a charge.",
                 },
                 {
                     question: "What are the restroom facilities like?",
-                    answer: "The campsite has common restrooms with unisex showers, WCs, and separate urinals. They're cleaned hourly between 4 PM – 11 PM and 8 AM – 12 PM.",
+                    answer: " Rooms have private attached washrooms. The campsite has common restrooms with unisex showers, WCs, and separate urinals. They're cleaned hourly between 4 PM – 11 PM and 8 AM – 12 PM.",
                 },
                 {
                     question: "Is it safe to enter the dam/backwaters?",
@@ -259,19 +259,19 @@ export const CONTENT = {
                 {
                     title: "Mission",
                     description:
-                        "To provide an unparalleled hospitality experience that connects guests with nature, culture, and luxury.",
+                        "To provide an unparalleled hospitality experience that connects guests with nature.",
                     Icon: LeafIcon,
                 },
                 {
                     title: "Vision",
                     description:
-                        "To be a leading destination for eco-luxury retreats, inspiring sustainable tourism and enriching lives.",
+                        "To be a leading destination for off beat retreats, inspiring people to connect with nature and their loved ones.",
                     Icon: EyeIcon,
                 },
                 {
                     title: "Values",
                     description:
-                        "Sustainability, Excellence, Community, Innovation, and Authenticity.",
+                        "Excellence, Community, Innovation, and Authenticity.",
                     Icon: GemIcon,
                 },
             ],
@@ -279,9 +279,9 @@ export const CONTENT = {
         journey: {
             title: "Our Journey",
             subtitle:
-                "Nestled amidst nature, Waterrock’s journey began with a vision to blend luxury and sustainability. Our story is one of passion, innovation, and a deep respect for the environment.",
-            para1: "Waterrock was founded by a group of nature enthusiasts who dreamed of creating a sanctuary where luxury and sustainability coexist. Inspired by the tranquil beauty of untouched landscapes, we set out to design a retreat that honors the environment while offering exceptional comfort. Every detail, from our eco-friendly architecture to our locally sourced cuisine, reflects our commitment to responsible hospitality. Over the years, Waterrock has grown into a vibrant community, welcoming guests from around the world to experience the harmony of nature and refined living. Our journey continues, guided by passion, innovation, and respect for the earth.",
-            para2: "At Waterrock, we believe in the power of connection—between people, nature, and culture. Our mission is to create unforgettable experiences that inspire guests to cherish and protect the natural world. We invite you to join us on this journey, where every moment is an opportunity to discover the beauty of life in harmony with nature.",
+                "Nestled amidst nature, Waterrock’s journey began with a vision to blend our busy lives with nature. Our story is one of passion, innovation, and a deep respect for the environment.",
+            para1: "Waterrock was founded by couple with passion to travel and discover offbeat stays. Waterrock is your escape into nature’s lap where comfort meets adventure and every meal feels like home.Tucked away from the noise of the city, our offbeat resort is designed for those who crave something different — a place where you can wake up to birdsong, sip chai by the lake, and end the day under a sky full of stars. We believe in simple joys: the smell of fresh earth after rain, the warmth of a cozy room, and the magic of a well-cooked meal. Our menu brings soul-satisfying dishes, made with love and fresh ingredients.Whether you're here to unwind, explore, or just breathe a little deeper, we’re here to make you feel at home — naturally.Over the years, Waterrock has grown into a vibrant community, welcoming 4000+ guests from around the world to experience the harmony of nature and refined living. Our journey continues, guided by passion, innovation, and respect for the earth.",
+            para2: "At Waterrock, we believe in the power of connection—between people and nature. Our mission is to create unforgettable experiences that inspire guests to cherish the natural world. We invite you to join us on this journey, where every moment is an opportunity to discover the beauty of life in harmony with nature.",
         },
         location: {
             title: "Our Locations",
@@ -300,6 +300,11 @@ export const CONTENT = {
         hero: {
             title: "Contact Us",
             subtitle: "Have questions or need assistance? We're here to help!",
+        },
+        corporateBookings: {
+            title: "Corporate Bookings",
+            subtitle:
+                "For corporate bookings, team outings, or special events, please reach out to us at the contact details above. We offer tailored packages to suit your needs and ensure a memorable experience for your team.",
         },
         reachUs: {
             title: "Reach Us",
@@ -345,7 +350,7 @@ export const CONTENT = {
             {
                 question:
                     "I forgot a few things back home, what can you cover me up with?",
-                answer: "Other than a Torch, umbrella, Shower gel, soap and shampoo or a dental kit (Chargeable at ₹ 50) which you can ask at the café desk.",
+                answer: "Other than a Torch, umbrella, Shower gel, soap and shampoo or a dental kit which you can ask at the café desk.",
             },
             {
                 question: "Do you sell Tobacco?",
@@ -357,7 +362,7 @@ export const CONTENT = {
             },
             {
                 question: "Is water available in the backwaters?",
-                answer: "Yes, the dam water is clean and very refreshing and is available from September till April mid every year.",
+                answer: "Yes, the dam water is clean and very refreshing and is available from August till April mid every year.",
             },
             {
                 question:
@@ -439,16 +444,16 @@ export const STAY_OPTIONS = [
                         silence of nature.
                     </p>
                 ),
-                note: "Please note water activities in Dam are seasonal. Please ask for the same.",
+                note: "Please note water activities in Dam are seasonal and as per govt. norms and notifications. Please ask for the same",
                 checkin: "2:00 PM",
                 checkout: "11:00 AM",
-                pax: "2 Adults + 2 Children",
+                pax: "2-4 Adults",
                 inclusions: [
                     "Stay",
                     "Dinner",
                     "Breakfast",
                     "Kayaking",
-                    "Bon-Fire",
+                    "Private Bon-Fire(Chargeable)",
                     "Indoor/ outdoor Activities",
                     "Parking",
                     "Floating in the Lake",
@@ -468,8 +473,7 @@ export const STAY_OPTIONS = [
                     "Fire pit",
                     "Party Deck",
                     "Mini Fridge",
-                    "DG back-up (8 hrs)",
-                    "Bell Service",
+                    "DG back-up",
                     "Electric Kettle",
                     "Wi-Fi (Intermittent)",
                 ],
@@ -490,10 +494,10 @@ export const STAY_OPTIONS = [
                         Enjoy your longer stays here and get a full urban detox!
                     </p>
                 ),
-                note: "Please note water activities in Dam are seasonal. Please ask for the same.",
+                note: "Please note water activities in Dam are seasonal and as per govt. norms and notifications. Please ask for the same",
                 checkin: "2:00 PM",
                 checkout: "11:00 AM",
-                pax: "2 Adults + 2 Children",
+                pax: "2-4 Adults",
                 inclusions: [
                     "Stay",
                     "Lunch",
@@ -517,7 +521,7 @@ export const STAY_OPTIONS = [
                     "Outdoor Sitting Area",
                     "Electric Kettle",
                     "Fridge",
-                    "Power Backup (upto 8 hrs)",
+                    "Power Backup",
                     "Mountain or Lake View",
                     "Airconditioning",
                     "Wi-Fi (Intermittent)",
@@ -541,10 +545,10 @@ export const STAY_OPTIONS = [
                         soul on a rejuvenation spree; SoulSpree!
                     </p>
                 ),
-                note: "Please note water activities in Dam are seasonal. Please ask for the same.",
+                note: "Please note water activities in Dam are seasonal and as per govt. norms and notifications. Please ask for the same",
                 checkin: "2:00 PM",
                 checkout: "11:00 AM",
-                pax: "2 Adults + 2 Children",
+                pax: "4-8 Adults",
                 inclusions: [
                     "Stay",
                     "Lunch",
@@ -603,7 +607,7 @@ export const STAY_OPTIONS = [
                 note: "Please note Tents are operational only from Oct to March.",
                 checkin: "4:00 PM",
                 checkout: "11:00 AM",
-                pax: "2 Adults + 2 Children",
+                pax: "2 Adults",
                 inclusions: [
                     "Stay",
                     "Dinner",
