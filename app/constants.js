@@ -43,6 +43,7 @@ export const CONTACT_EMAIL = "cs.waterrock@gmail.com"
 export const CONTACT_PHONE_NUMBER = "9021679953"
 export const WHATSAPP_URL =
     "https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
+export const INSTAGRAM_URL = "https://www.instagram.com/waterrock_official"
 
 export const CONTENT = {
     seo: {
@@ -701,7 +702,7 @@ export const FOOTER_LINKS = [
         title: "Social",
         links: [
             {
-                href: "https://www.instagram.com/waterrock_official",
+                href: INSTAGRAM_URL,
                 label: "Instagram ↗",
             },
             {

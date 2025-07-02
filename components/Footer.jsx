@@ -58,7 +58,7 @@ export default function Footer() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            @avisionx
+                            @avisionx ↗
                         </Link>
                     </p>
                     <p className="mt-1">

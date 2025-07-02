@@ -3,11 +3,16 @@
 import { ArrowRightIcon } from "lucide-react"
 import Link from "next/link"
 
-export default function FancyButton({ text = "", href = "/", ...rest }) {
+export default function FancyButton({
+    text = "",
+    href = "/",
+    className = "",
+    ...rest
+}) {
     return (
         <Link
             href={href}
-            className="group relative inline-flex h-[calc(36px+8px)] items-center justify-center rounded-full bg-black py-1 pl-6 pr-14 font-medium text-white"
+            className={`group relative inline-flex h-[calc(36px+8px)] items-center justify-center whitespace-nowrap rounded-full bg-black py-1 pl-6 pr-14 font-medium text-white ${className}`}
             {...rest}
         >
             <span className="z-10 text-white">{text}</span>
