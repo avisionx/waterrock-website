@@ -16,7 +16,7 @@ export default function HomePage() {
     return (
         <>
             <section className="mx-auto max-w-9xl px-4 pb-24 pt-36 lg:pt-44">
-                <div className="grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-3">
+                <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-3 lg:gap-16">
                     <div className="space-y-6">
                         <h1 className="font-heading text-4xl leading-tight sm:text-5xl md:text-6xl">
                             Escape, <br />
