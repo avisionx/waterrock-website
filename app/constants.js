@@ -36,6 +36,7 @@ import {
     WindIcon,
     ZapIcon,
 } from "lucide-react"
+import Link from "next/link"
 
 import { getLocationSubmenu } from "@/app/utils"
 
@@ -44,6 +45,23 @@ export const CONTACT_PHONE_NUMBER = "9021679953"
 export const WHATSAPP_URL =
     "https://api.whatsapp.com/message/QCBAHDST3WKQD1?autoload=1&app_absent=0"
 export const INSTAGRAM_URL = "https://www.instagram.com/waterrock_official"
+export const GENERAL_STAY_POLICY_NOTE = (
+    <>
+        Please go through our{" "}
+        <Link className="underline" href="/tnc">
+            TnC
+        </Link>{" "}
+        &{" "}
+        <Link className="underline" href="/cancellation">
+            Cancellation Policy
+        </Link>{" "}
+        or{" "}
+        <Link href="/contact" className="underline">
+            Contact Us
+        </Link>{" "}
+        for any queries before booking.
+    </>
+)
 
 export const CONTENT = {
     seo: {
@@ -179,7 +197,7 @@ export const CONTENT = {
                     icon: ShieldCheckIcon,
                 },
             ],
-            note: "Please note water activities in Dam are seasonal and as per government norms and notifications. Please ask for the same",
+            note: "Please note water activities in Dam are seasonal and as per government norms and notifications. Please ask for the same.",
         },
         whyChoose: {
             title: "Why Choose WaterRock?",
@@ -423,6 +441,21 @@ export const CONTENT = {
         titlePart3: "Shouldn't End Here.",
         subtitle: "Experience Nature with Comfort — Reserve Your Stay Today",
     },
+    tnc: {
+        title: "Terms & Conditions",
+        subtitle:
+            "Please read our terms and conditions carefully before booking your stay.",
+    },
+    privacy: {
+        title: "Privacy Policy",
+        subtitle:
+            "Your privacy is important to us. Please review our privacy policy to understand how we collect, use, and protect your information.",
+    },
+    cancellation: {
+        title: "Cancellation Policy",
+        subtitle:
+            "Please review our cancellation policy before booking your stay.",
+    },
 }
 
 export const STAY_OPTIONS = [
@@ -445,7 +478,7 @@ export const STAY_OPTIONS = [
                         silence of nature.
                     </p>
                 ),
-                note: "Please note water activities in Dam are seasonal and as per govt. norms and notifications. Please ask for the same",
+                note: "Please note water activities in Dam are seasonal and as per govt. norms and notifications. Please ask for the same.",
                 checkin: "2:00 PM",
                 checkout: "11:00 AM",
                 pax: "2-4 Adults",
@@ -496,7 +529,7 @@ export const STAY_OPTIONS = [
                         Enjoy your longer stays here and get a full urban detox!
                     </p>
                 ),
-                note: "Please note water activities in Dam are seasonal and as per govt. norms and notifications. Please ask for the same",
+                note: "Please note water activities in Dam are seasonal and as per govt. norms and notifications. Please ask for the same.",
                 checkin: "2:00 PM",
                 checkout: "11:00 AM",
                 pax: "2-4 Adults",
@@ -548,7 +581,7 @@ export const STAY_OPTIONS = [
                         soul on a rejuvenation spree; SoulSpree!
                     </p>
                 ),
-                note: "Please note water activities in Dam are seasonal and as per govt. norms and notifications. Please ask for the same",
+                note: "Please note water activities in Dam are seasonal and as per govt. norms and notifications. Please ask for the same.",
                 checkin: "2:00 PM",
                 checkout: "11:00 AM",
                 pax: "4-8 Adults",
@@ -718,6 +751,14 @@ export const FOOTER_LINKS = [
                 label: "YouTube ↗",
             },
             { href: "https://g.co/kgs/Vjxz5PG", label: "Google ↗" },
+        ],
+    },
+    {
+        title: "Legal",
+        links: [
+            { href: "/tnc", label: "Terms & Conditions" },
+            { href: "/cancellation", label: "Cancellation Policy" },
+            { href: "/privacy", label: "Privacy Policy" },
         ],
     },
 ]

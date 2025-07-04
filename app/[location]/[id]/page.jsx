@@ -7,7 +7,12 @@ import FancyButton from "@/components/FancyButton"
 import LocationImageSlider from "@/components/LocationImageSlider"
 import PageTitle from "@/components/PageTitle"
 
-import { STAY_DETAILS, STAY_OPTIONS, WHATSAPP_URL } from "@/app/constants"
+import {
+    GENERAL_STAY_POLICY_NOTE,
+    STAY_DETAILS,
+    STAY_OPTIONS,
+    WHATSAPP_URL,
+} from "@/app/constants"
 
 export async function generateStaticParams() {
     const paths = STAY_OPTIONS.flatMap(({ location, options }) =>
@@ -69,6 +74,10 @@ export default async function StayPage({ params }) {
                         />
                         <p className="mt-3 text-sm font-medium text-black/70">
                             <span className="text-red-500">*</span> {STAY.note}
+                        </p>
+                        <p className="mt-1 text-sm font-medium text-black/70">
+                            <span className="text-red-500">*</span>{" "}
+                            {GENERAL_STAY_POLICY_NOTE}
                         </p>
                     </div>
                 </div>
