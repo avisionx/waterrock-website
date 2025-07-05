@@ -44,7 +44,7 @@ export default async function StayPage({ params }) {
                         imageCount={STAY.imageCount}
                     />
                     <div>
-                        <div className="mb-12 space-y-8 text-black/70">
+                        <div className="mb-8 space-y-8 text-black/70">
                             {STAY.description}
                             <div className="grid grid-cols-2 gap-6">
                                 <div className="flex items-center gap-4">
@@ -72,13 +72,14 @@ export default async function StayPage({ params }) {
                             target="_blank"
                             text="Book Now"
                         />
-                        <p className="mt-3 text-sm font-medium text-black/70">
-                            <span className="text-red-500">*</span> {STAY.note}
-                        </p>
-                        <p className="mt-1 text-sm font-medium text-black/70">
-                            <span className="text-red-500">*</span>{" "}
-                            {GENERAL_STAY_POLICY_NOTE}
-                        </p>
+                        <div className="mt-6 flex items-start gap-2 text-sm font-medium text-black/70">
+                            <div className="text-red-500">*</div>
+                            <div>{STAY.note}</div>
+                        </div>
+                        <div className="mt-1 flex items-start gap-2 text-sm font-medium text-black/70">
+                            <div className="text-red-500">*</div>
+                            <div>{GENERAL_STAY_POLICY_NOTE}</div>
+                        </div>
                     </div>
                 </div>
                 <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 lg:grid-cols-2">
