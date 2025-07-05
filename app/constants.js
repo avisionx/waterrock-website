@@ -83,7 +83,6 @@ export const CONTENT = {
     },
     homepage: {
         hero: {
-            // title: can't abstract this please ask dev to update
             subtitle:
                 "Discover the magic of curated nature stays near Pune & Mumbai.",
             scrollText: "Scroll to explore your next soulful escape",
@@ -332,7 +331,7 @@ export const CONTENT = {
         },
     },
     faqs: {
-        title: "Contact Us",
+        title: "FAQs",
         subtitle: "Have questions or need assistance? We're here to help!",
         features: [
             {
