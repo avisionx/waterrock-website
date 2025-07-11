@@ -8,10 +8,10 @@ import LocationImageSlider from "@/components/LocationImageSlider"
 import PageTitle from "@/components/PageTitle"
 
 import {
+    BOOKING_URL,
     GENERAL_STAY_POLICY_NOTE,
     STAY_DETAILS,
     STAY_OPTIONS,
-    WHATSAPP_URL,
 } from "@/app/constants"
 
 export async function generateStaticParams() {
@@ -68,7 +68,7 @@ export default async function StayPage({ params }) {
                             </div>
                         </div>
                         <FancyButton
-                            href={WHATSAPP_URL}
+                            href={BOOKING_URL}
                             target="_blank"
                             text="Book Now"
                         />

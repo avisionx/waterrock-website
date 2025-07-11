@@ -10,7 +10,7 @@ import FancyButton from "@/components/FancyButton"
 import FancyHeading from "@/components/FancyHeading"
 import HeroGallery from "@/components/HeroGallery"
 
-import { CONTENT, STAY_OPTIONS, WHATSAPP_URL } from "@/app/constants"
+import { BOOKING_URL, CONTENT, STAY_OPTIONS } from "@/app/constants"
 
 export default function HomePage() {
     return (
@@ -38,7 +38,7 @@ export default function HomePage() {
                                 Explore Stays
                             </Link>
                             <FancyButton
-                                href={WHATSAPP_URL}
+                                href={BOOKING_URL}
                                 target="_blank"
                                 text="Book Now"
                             />

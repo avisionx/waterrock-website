@@ -7,7 +7,12 @@ import { useEffect, useState } from "react"
 
 import FancyButton from "@/components/FancyButton"
 
-import { INSTAGRAM_URL, MENU_DATA, WHATSAPP_URL } from "@/app/constants"
+import {
+    BOOKING_URL,
+    INSTAGRAM_URL,
+    MENU_DATA,
+    WHATSAPP_URL,
+} from "@/app/constants"
 import LOGO from "@/assets/waterrock-logo.svg"
 
 export default function Header() {
@@ -147,7 +152,7 @@ export default function Header() {
                     </Link>
                     <div className="max-w-32 scale-[80%] lg:max-w-max lg:scale-100">
                         <FancyButton
-                            href={WHATSAPP_URL}
+                            href={BOOKING_URL}
                             target="_blank"
                             text="Book Now"
                         />

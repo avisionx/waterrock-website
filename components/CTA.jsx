@@ -4,7 +4,7 @@ import Link from "next/link"
 
 import FancyButton from "@/components/FancyButton"
 
-import { CONTENT, WHATSAPP_URL } from "@/app/constants"
+import { BOOKING_URL, CONTENT } from "@/app/constants"
 
 export default function CTA() {
     return (
@@ -28,7 +28,7 @@ export default function CTA() {
                         Explore Stays
                     </Link>
                     <FancyButton
-                        href={WHATSAPP_URL}
+                        href={BOOKING_URL}
                         target="_blank"
                         text="Book Now"
                     />
