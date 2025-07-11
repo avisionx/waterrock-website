@@ -536,7 +536,6 @@ export const STAY_OPTIONS = [
                 pax: "2-4 Adults",
                 inclusions: [
                     "Stay",
-                    "Lunch",
                     "Dinner",
                     "Breakfast",
                     "Kayaking",
@@ -588,7 +587,6 @@ export const STAY_OPTIONS = [
                 pax: "4-8 Adults",
                 inclusions: [
                     "Stay",
-                    "Lunch",
                     "Dinner",
                     "Breakfast",
                     "Kayaking",
