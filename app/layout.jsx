@@ -1,5 +1,6 @@
 import "server-only"
 
+import { GoogleAnalytics } from "@next/third-parties/google"
 import { Inter, Playfair_Display } from "next/font/google"
 
 import Footer from "@/components/Footer"
@@ -49,6 +50,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
+            <GoogleAnalytics gaId="G-YEZC0TZ3ZM" />
             <body
                 className={`relative ${fontHeading.variable} ${fontBody.variable}`}
             >
