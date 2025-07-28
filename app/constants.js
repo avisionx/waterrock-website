@@ -252,7 +252,7 @@ export const CONTENT = {
                 {
                     question:
                         "Are mobile networks available? Will my Vodafone network work?",
-                    answer: "Jio works in patches, BSNL works intermittently. A SIM-based Wi-Fi router is available at the cafe with limited connectivity",
+                    answer: "Jio works in patches, BSNL is operational intermittently. we have sim based wifi router in cafe which only works for payment and SOS messages. We are internet- free zone.",
                 },
                 {
                     question: "Can I carry my own food or alcohol?",
@@ -342,7 +342,7 @@ export const CONTENT = {
             {
                 question:
                     "Which mobile networks are available? Will my Vodafone network work at the camp site?",
-                answer: "Jio works in patches, BSNL is operational intermittently. We have a sim based Wi-Fi Router installed at three places across the park: Glamping Café, Mango Tree and at the Commune.",
+                answer: "Jio works in patches, BSNL is operational intermittently. we have sim based wifi router in cafe which only works for payment and SOS messages. We are internet- free zone.",
             },
             {
                 question:
