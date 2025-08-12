@@ -40,7 +40,7 @@ import Link from "next/link"
 
 import { getLocationSubmenu } from "@/app/utils"
 
-export const CONTACT_EMAIL = "cs.waterrock@gmail.com"
+export const CONTACT_EMAIL = "support@waterrock.in"
 export const CONTACT_PHONE_NUMBER = "9021679953"
 export const BOOKING_URL =
     "https://booking.posease.com/hotel/booking/67b3ba149fd46d2f59fcccc1"
