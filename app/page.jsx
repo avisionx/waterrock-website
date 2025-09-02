@@ -125,6 +125,40 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
+            <section className="pb-24">
+                <div className="mx-auto max-w-9xl px-4">
+                    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/20 px-8 py-16 md:px-16">
+                        <div className="relative z-10 mx-auto max-w-4xl text-center">
+                            <p className="font-heading text-3xl lg:text-4xl">
+                                Discover the{" "}
+                                <span className="text-primary">Heritage</span> &{" "}
+                                <span className="text-secondary">Beauty</span>{" "}
+                                Around Bhor
+                            </p>
+                            <p className="mx-auto mt-4 max-w-3xl text-balance text-black/80 md:text-lg">
+                                From ancient Maratha forts to serene temples and
+                                scenic viewpoints, explore incredible
+                                destinations within an hour of WaterRock.
+                            </p>
+                            <div className="mx-auto mt-6 flex items-center justify-center gap-4 pt-2">
+                                <Link
+                                    href="/experiences-near-bhor"
+                                    className="inline-flex h-[44px] items-center justify-center rounded-full bg-secondary px-6 py-1 font-medium text-white transition-all hover:bg-secondary/90"
+                                >
+                                    Explore Experiences
+                                </Link>
+                                <FancyButton
+                                    href={BOOKING_URL}
+                                    target="_blank"
+                                    text="Book Now"
+                                />
+                            </div>
+                        </div>
+                        <div className="absolute -right-24 -top-28 size-96 rounded-full bg-primary/5" />
+                        <div className="absolute -bottom-16 -left-16 size-52 rounded-full bg-secondary/5" />
+                    </div>
+                </div>
+            </section>
             <section className="pb-24" id="activities">
                 <div className="mx-auto max-w-9xl px-4">
                     <FancyHeading
@@ -183,7 +217,7 @@ export default function HomePage() {
             </section>
             <section className="pb-24">
                 <div className="mx-auto max-w-9xl px-4">
-                    <div className="grid gap-8 rounded-2xl bg-secondary/20 px-8 py-12 md:grid-cols-3 md:gap-16 md:px-16 md:py-16">
+                    <div className="grid gap-8 rounded-2xl bg-secondary/10 px-8 py-12 md:grid-cols-3 md:gap-16 md:px-16 md:py-16">
                         <div>
                             <p className="font-heading text-3xl">
                                 {CONTENT.homepage.whyChoose.title}

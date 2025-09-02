@@ -4,6 +4,7 @@ import {
     BedDoubleIcon,
     BellIcon,
     BrainCircuitIcon,
+    CameraIcon,
     CircleIcon,
     CoffeeIcon,
     CreditCardIcon,
@@ -21,12 +22,14 @@ import {
     LeafIcon,
     LifeBuoyIcon,
     MoonIcon,
+    MountainIcon,
     ParkingCircleIcon,
     ShieldCheckIcon,
     SnowflakeIcon,
     SparklesIcon,
     SpeakerIcon,
     SquareStackIcon,
+    StarIcon,
     SunIcon,
     SwordIcon,
     TreesIcon,
@@ -441,6 +444,203 @@ export const CONTENT = {
         titlePart3: "Shouldn't End Here.",
         subtitle: "Experience Nature with Comfort — Reserve Your Stay Today",
     },
+    expNearBhor: {
+        hero: {
+            title: "Experiences Near Bhor",
+            subtitle:
+                "Discover the perfect blend of history, nature, and adventure around our WaterRock retreat.From ancient forts to serene temples, explore the rich heritage and natural beauty that makes Bhor a unique destination.",
+            intro: "10 Places to Visit Near Bhor",
+            introDesc:
+                "Places to visit in Bhor offer numerous experiences for every type of traveller. Each spot in the region offers its own appeal, whether you're interested in exploring ancient architecture, enjoying scenic beauty, or experiencing local cultural traditions. From historic forts to temples and riverside views, Bhor has something to captivate any traveller.",
+        },
+        experiences: [
+            {
+                id: "bhatghar-dam",
+                name: "Bhatghar Dam",
+                description:
+                    "A massive water reservoir built on the Yelwanti River, Bhatghar Dam is one of the most significant tourist attractions in Bhor. The dam's expansive reservoir makes it a favourite destination for those who enjoy natural environments and outdoor activities.",
+                details:
+                    "Also known as Lloyd Dam, this gravity dam is one of the oldest dams in Maharashtra, constructed during the British Raj. Standing 58 meters high and 1625 meters long, it offers water sports and scenic views.",
+                distance: "15 km from WaterRock",
+                duration: "2-3 hours",
+                type: "Dam & Water Activities",
+                icon: TreesIcon,
+                highlights: [
+                    "One of Maharashtra's oldest dams",
+                    "Water sports and boating",
+                    "Scenic reservoir views",
+                    "Photography opportunities",
+                ],
+            },
+            {
+                id: "baneshwar-temple",
+                name: "Baneshwar Temple",
+                description:
+                    "Situated within a wooded area, Baneshwar Temple offers visitors a peaceful setting for prayer and reflection. The temple's rich history and serene atmosphere draw pilgrims and tourists alike.",
+                details:
+                    "Apart from its spiritual importance, the site also boasts a small waterfall and garden, adding to its appeal for families looking for a place to spend a calm day in nature.",
+                distance: "25 km from WaterRock",
+                duration: "1-2 hours",
+                type: "Temple & Spirituality",
+                icon: StarIcon,
+                highlights: [
+                    "Peaceful wooded setting",
+                    "Small waterfall nearby",
+                    "Garden area for families",
+                    "Spiritual significance",
+                ],
+            },
+            {
+                id: "rajgad-fort",
+                name: "Rajgad Fort",
+                description:
+                    "An iconic site from the Maratha Empire's era, Rajgad Fort attracts both history buffs and trekkers. Its historical role as the former capital of the Maratha Kingdom under Chhatrapati Shivaji Maharaj offers visitors a glimpse into the region's past.",
+                details:
+                    "The fort's location atop a hill makes it a challenging but rewarding trek, with sweeping views from the top. Explorers can wander through ancient ruins and visualise the fort's grandeur.",
+                distance: "40 km from WaterRock",
+                duration: "4-6 hours (including trek)",
+                type: "Historical Fort & Trekking",
+                icon: MountainIcon,
+                highlights: [
+                    "Former Maratha capital",
+                    "Challenging trek with rewards",
+                    "Ancient ruins to explore",
+                    "Sweeping hilltop views",
+                ],
+            },
+            {
+                id: "rohida-fort",
+                name: "Rohida Fort (Vichitragad)",
+                description:
+                    "Rising over 1,100 metres above sea level, Rohida Fort offers a blend of historical discovery and adventure. This fort provides a rewarding trek through natural and historical landmarks.",
+                details:
+                    "As you explore the fort's ancient walls, you can imagine its role in the region's past, while the stunning views from its heights provide excellent viewpoints for adventurers and history lovers.",
+                distance: "50 km from WaterRock",
+                duration: "5-7 hours (including trek)",
+                type: "High Altitude Fort & Adventure",
+                icon: MountainIcon,
+                highlights: [
+                    "1,100+ meters above sea level",
+                    "Ancient walls and ruins",
+                    "Excellent viewpoints",
+                    "Adventure trekking",
+                ],
+            },
+            {
+                id: "jungle-hood",
+                name: "Jungle Hood",
+                description:
+                    "Jungle Hood offers a serene retreat into nature for those looking to connect with the outdoors. This spot is perfect for camping enthusiasts, offering wildlife observation and wilderness exploration.",
+                details:
+                    "Visitors can escape the rush of daily life and enjoy the peacefulness of the forest. With facilities for family-friendly experiences, it serves as a prime destination for adventure seekers.",
+                distance: "35 km from WaterRock",
+                duration: "Half day to full day",
+                type: "Nature Retreat & Camping",
+                icon: TreesIcon,
+                highlights: [
+                    "Serene forest retreat",
+                    "Wildlife observation",
+                    "Camping facilities",
+                    "Family-friendly activities",
+                ],
+            },
+            {
+                id: "prati-balaji-temple",
+                name: "Prati Balaji Temple",
+                description:
+                    "The Prati Balaji Temple offers visitors a spiritual experience with its striking architecture and religious significance. Modelled after the popular Tirupati Balaji Temple.",
+                details:
+                    "It allows devotees to experience the essence of the famous shrine without traveling far. The peaceful environment and detailed craftsmanship make this temple popular with pilgrims and travelers.",
+                distance: "30 km from WaterRock",
+                duration: "1-2 hours",
+                type: "Temple & Architecture",
+                icon: StarIcon,
+                highlights: [
+                    "Modelled after Tirupati Balaji",
+                    "Striking architecture",
+                    "Detailed craftsmanship",
+                    "Peaceful environment",
+                ],
+            },
+            {
+                id: "nana-phadnavis-wada",
+                name: "Nana Phadnavis Wada",
+                description:
+                    "Nana Phadnavis Wada offers a deep dive into the architectural heritage of the Maratha Empire. Once the residence of Nana Phadnavis, a key statesman in Maratha history.",
+                details:
+                    "This mansion preserves the grandeur of Maratha craftsmanship and is now a museum where visitors can explore various artefacts and learn about the rich cultural past of the region.",
+                distance: "45 km from WaterRock",
+                duration: "2-3 hours",
+                type: "Heritage & Museum",
+                icon: StarIcon,
+                highlights: [
+                    "Maratha architectural heritage",
+                    "Museum with artifacts",
+                    "Historical significance",
+                    "Cultural learning experience",
+                ],
+            },
+            {
+                id: "necklace-point",
+                name: "Necklace Point",
+                description:
+                    "One of the most beautiful places for a Bhor trip, Necklace Point offers stunning views of the valley. Its name derives from the winding road that resembles a necklace.",
+                details:
+                    "This location is ideal for tourists who enjoy scenic drives and photography. Perfect for capturing views at dawn or dusk, making it a beautiful stop on any journey through the region.",
+                distance: "20 km from WaterRock",
+                duration: "1-2 hours",
+                type: "Scenic Viewpoint",
+                icon: CameraIcon,
+                highlights: [
+                    "Stunning valley views",
+                    "Scenic winding roads",
+                    "Photography opportunities",
+                    "Dawn and dusk views",
+                ],
+            },
+            {
+                id: "purandar-fort",
+                name: "Purandar Fort",
+                description:
+                    "Purandar Fort holds historical significance as the birthplace of Sambhaji Maharaj, the son of Chhatrapati Shivaji Maharaj. It's a well-known spot for trekking with moderate trails.",
+                details:
+                    "Visitors can explore the trail leading to the summit, rewarded with historical insights and views. Its long history, combined with beautiful surroundings, makes it an important cultural destination.",
+                distance: "55 km from WaterRock",
+                duration: "4-5 hours (including trek)",
+                type: "Historical Fort & Trekking",
+                icon: MountainIcon,
+                highlights: [
+                    "Birthplace of Sambhaji Maharaj",
+                    "Moderate trekking trail",
+                    "Historical insights",
+                    "Cultural significance",
+                ],
+            },
+            {
+                id: "dholya-ganapati-temple",
+                name: "Dholya Ganapati Temple",
+                description:
+                    "Located in Wai, Dholya Ganapati Temple is dedicated to Lord Ganesha and is a revered pilgrimage site. The temple is known for its massive Ganapati idol.",
+                details:
+                    "Visitors are drawn not only for religious purposes but also to admire its architectural details and peaceful atmosphere. The temple is essential for exploring Maharashtra's religious culture.",
+                distance: "60 km from WaterRock",
+                duration: "2-3 hours",
+                type: "Temple & Pilgrimage",
+                icon: StarIcon,
+                highlights: [
+                    "Massive Ganapati idol",
+                    "Architectural details",
+                    "Peaceful atmosphere",
+                    "Religious significance",
+                ],
+            },
+        ],
+        gettingAround: {
+            title: "Getting Around",
+            subtitle:
+                "Most attractions are within 60 km of WaterRock Bhor. We recommend hiring a local taxi or using your own vehicle for the best experience. Our team can help arrange transportation and provide detailed directions.",
+        },
+    },
     tnc: {
         title: "Terms & Conditions",
         subtitle:
@@ -693,6 +893,7 @@ export const MENU_DATA = [
     {
         title: "Experiences",
         submenu: [
+            { title: "Experiences near Bhor", href: "/experiences-near-bhor" },
             { title: "Activities", href: "/#activities" },
             { title: "Amenities", href: "/#amenities" },
         ],
