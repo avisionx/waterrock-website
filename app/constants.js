@@ -461,8 +461,8 @@ export const CONTENT = {
                     "A massive water reservoir built on the Yelwanti River, Bhatghar Dam is one of the most significant tourist attractions in Bhor. The dam's expansive reservoir makes it a favourite destination for those who enjoy natural environments and outdoor activities.",
                 details:
                     "Also known as Lloyd Dam, this gravity dam is one of the oldest dams in Maharashtra, constructed during the British Raj. Standing 58 meters high and 1625 meters long, it offers water sports and scenic views.",
-                distance: "15 km from WaterRock",
-                duration: "2-3 hours",
+                distance: "38 km from WaterRock",
+                duration: "1-2 hours",
                 type: "Dam & Water Activities",
                 icon: TreesIcon,
                 highlights: [
@@ -497,8 +497,8 @@ export const CONTENT = {
                     "An iconic site from the Maratha Empire's era, Rajgad Fort attracts both history buffs and trekkers. Its historical role as the former capital of the Maratha Kingdom under Chhatrapati Shivaji Maharaj offers visitors a glimpse into the region's past.",
                 details:
                     "The fort's location atop a hill makes it a challenging but rewarding trek, with sweeping views from the top. Explorers can wander through ancient ruins and visualise the fort's grandeur.",
-                distance: "40 km from WaterRock",
-                duration: "4-6 hours (including trek)",
+                distance: "15 km from WaterRock",
+                duration: "4 hours (including trek)",
                 type: "Historical Fort & Trekking",
                 icon: MountainIcon,
                 highlights: [
@@ -527,21 +527,21 @@ export const CONTENT = {
                 ],
             },
             {
-                id: "jungle-hood",
-                name: "Jungle Hood",
+                id: "madheghat-waterfall",
+                name: "Madheghat Waterfall",
                 description:
-                    "Jungle Hood offers a serene retreat into nature for those looking to connect with the outdoors. This spot is perfect for camping enthusiasts, offering wildlife observation and wilderness exploration.",
+                    "Madheghat Waterfall is a stunning natural wonder nestled in the Western Ghats, offering a refreshing escape into pristine nature. This beautiful cascade attracts nature lovers and adventure enthusiasts alike.",
                 details:
-                    "Visitors can escape the rush of daily life and enjoy the peacefulness of the forest. With facilities for family-friendly experiences, it serves as a prime destination for adventure seekers.",
-                distance: "35 km from WaterRock",
-                duration: "Half day to full day",
-                type: "Nature Retreat & Camping",
-                icon: TreesIcon,
+                    "A perfect spot for nature photography, relaxation, and enjoying the monsoon beauty. The waterfall is surrounded by lush greenery and offers excellent trekking opportunities through scenic trails.",
+                distance: "25 km from WaterRock",
+                duration: "1-2 hours",
+                type: "Waterfall & Nature Trek",
+                icon: WavesIcon,
                 highlights: [
-                    "Serene forest retreat",
-                    "Wildlife observation",
-                    "Camping facilities",
-                    "Family-friendly activities",
+                    "Spectacular waterfall views",
+                    "Nature photography spot",
+                    "Trekking trails",
+                    "Monsoon season beauty",
                 ],
             },
             {
@@ -587,7 +587,7 @@ export const CONTENT = {
                     "One of the most beautiful places for a Bhor trip, Necklace Point offers stunning views of the valley. Its name derives from the winding road that resembles a necklace.",
                 details:
                     "This location is ideal for tourists who enjoy scenic drives and photography. Perfect for capturing views at dawn or dusk, making it a beautiful stop on any journey through the region.",
-                distance: "20 km from WaterRock",
+                distance: "32 km from WaterRock",
                 duration: "1-2 hours",
                 type: "Scenic Viewpoint",
                 icon: CameraIcon,
