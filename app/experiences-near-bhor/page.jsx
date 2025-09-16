@@ -29,14 +29,17 @@ export default function ExperiencesNearBhor() {
                     <div
                         key={experience.id}
                         className="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary/5 via-secondary/10 to-accent/20"
-                    >
-                        <Image
-                            src={`/images/exp-near-bhor/${experience.id}.webp`}
-                            width={600}
-                            height={400}
-                            alt=""
-                            className="h-[400px] w-full object-cover"
-                        />
+                    >   <div className="relative group">
+                            <div className="bg-black/30 absolute top-0 left-0 right-0 bottom-0 group-hover:opacity-0 transition-opacity"></div>
+                            <span className="absolute left-1/2 text-center transform -translate-x-1/2 top-1/2 -translate-y-1/2 text-white font-medium tracking-wide text-3xl group-hover:opacity-0 transition-opacity duration-150">{experience.name}</span>
+                            <Image
+                                src={`/images/exp-near-bhor/${experience.id}.webp`}
+                                width={600}
+                                height={400}
+                                alt=""
+                                className="h-[400px] w-full object-cover"
+                            />
+                        </div>
                         <div className="p-6">
                             <div className="mb-4 flex items-start gap-4">
                                 <div className="rounded-lg bg-primary p-3">
