@@ -47,7 +47,7 @@ export const CONTACT_EMAIL = "support@waterrock.in"
 export const CONTACT_PHONE_NUMBER = "9021679953"
 export const BOOKING_URL =
     "https://booking.posease.com/hotel/booking/67b3ba149fd46d2f59fcccc1"
-export const WHATSAPP_URL = "https://wa.me/message/QCBAHDST3WKQD1"
+export const WHATSAPP_URL = "https://wa.me/9021679953"
 export const INSTAGRAM_URL = "https://www.instagram.com/waterrock_official"
 export const GENERAL_STAY_POLICY_NOTE = (
     <>
