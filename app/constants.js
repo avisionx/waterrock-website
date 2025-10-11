@@ -308,7 +308,7 @@ export const CONTENT = {
         location: {
             title: "Our Locations",
             subtitle:
-                "Waterrock currently has 1 location Bhor and Khopoli (Coming Soon). Each destination offers a unique blend of natural beauty, luxury accommodations, and immersive experiences that reflect the essence of Waterrock.",
+                "Waterrock currently has 1 location Bhor and Khopoli (Coming Soon). Each destination offers a unique blend of natural beauty, luxury and immersive experiences that reflect the essence of Waterrock.",
         },
         career: {
             title: "Career @ WaterRock",
