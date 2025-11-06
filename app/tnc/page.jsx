@@ -126,6 +126,10 @@ export default function TncPage() {
                             discretion.
                         </li>
                         <li>
+                            Kindly note that outside food, beverages, and hookah
+                            are not permitted on the premises.
+                        </li>
+                        <li>
                             Dam water levels reduce during summer, but guests
                             can still enjoy mountain views, river streams,
                             sunrises, and starry nights.
