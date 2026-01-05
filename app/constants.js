@@ -946,7 +946,7 @@ export const FOOTER_LINKS = [
                 label: "Facebook ↗",
             },
             {
-                href: "https://www.youtube.com/@waterrock7067",
+                href: "https://www.youtube.com/@waterrock_official",
                 label: "YouTube ↗",
             },
             { href: "https://g.co/kgs/Vjxz5PG", label: "Google ↗" },
