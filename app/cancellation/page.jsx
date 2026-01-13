@@ -26,7 +26,8 @@ export default function CancellationPage() {
                                 <CheckIcon className="mt-0.5 size-6 text-green-600" />
                             </span>
                             <p>
-                                <b>100%</b> payment of total amount is necessary for confirmation of booking
+                                <b>100%</b> payment of total amount is necessary
+                                for confirmation of booking
                             </p>
                         </li>
                         <li className="flex items-start gap-2">
