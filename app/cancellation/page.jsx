@@ -26,6 +26,14 @@ export default function CancellationPage() {
                                 <CheckIcon className="mt-0.5 size-6 text-green-600" />
                             </span>
                             <p>
+                                <b>100%</b> payment of total amount is necessary for confirmation of booking
+                            </p>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span>
+                                <CheckIcon className="mt-0.5 size-6 text-green-600" />
+                            </span>
+                            <p>
                                 <b>80%</b> amount is refundable <b>7 days</b>{" "}
                                 prior to check-in time
                             </p>
