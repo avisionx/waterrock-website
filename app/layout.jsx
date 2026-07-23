@@ -5,7 +5,7 @@ import { Inter, Playfair_Display } from "next/font/google"
 
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
-import ScrollToTop from "@/components/ScrollToTop"
+import WhatsAppButton from "@/components/WhatsAppButton"
 
 import { CONTENT } from "@/app/constants"
 
@@ -131,7 +131,7 @@ export default function RootLayout({ children }) {
                 <Header />
                 {children}
                 <Footer />
-                <ScrollToTop />
+                <WhatsAppButton />
             </body>
         </html>
     )
